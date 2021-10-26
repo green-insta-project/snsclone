@@ -16,6 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           jihwa
+          yoonseo
         </a>
       </header>
     </div>
