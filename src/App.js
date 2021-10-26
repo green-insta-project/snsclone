@@ -18,6 +18,7 @@ function App() {
           jihwa
           yoonseo
           sohee
+          jooeun
         </a>
       </header>
     </div>
