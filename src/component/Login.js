@@ -28,10 +28,10 @@ export default function Login() {
         <form className="loginA">
                 <h1>Instagram</h1>
                 <p>
-                    <input label-label="전화번호, 사용자 이름 또는 이메일"  type="text" />
+                    <input placeholder="전화번호, 사용자 이름 또는 이메일"  type="text" />
                 </p>
                 <p>
-                    <input aria-label="비밀번호" type="password" />
+                    <input placeholder="비밀번호" type="password" />
                 </p>
                 <p className="loginbutton">
                     <input type="submit" value="로그인" />
