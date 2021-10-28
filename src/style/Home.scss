@@ -1,3 +1,5 @@
+
+// 지연님 숙제
 $assortColor: #8e8e8e;
 $fontSize: 14px;
 $Point: pointer;
@@ -11,6 +13,7 @@ $Point: pointer;
 @mixin Mbottom(){
   margin-bottom: 4px;
 }
+
 
 // Reset css
 button,
@@ -29,12 +32,131 @@ textarea:active{
 }
 
 
-main{
-  box-sizing: border-box;
+
+
+
+
+
+// 탑 소희님 
+
+header{
+  height:53px;
+  border-bottom: 1px solid #ddd;
+  .logo{
+    position: fixed;
+    top:15.5px; left:483.5px;
+    cursor: pointer;
+  }
+  .search{
+    position: fixed;
+    width:210px;
+    top:14px; left:848px;
+    text-align: center;
+    color:gray;
+    border-radius:3px;
+    border: 1px solid #ddd;
+    padding:5px;
+  }
+  .searchicon{
+    position: fixed;
+    top:15px; left:850px;
+  }
+  .icon{
+    position: fixed;
+    top:15.5px; left:1155px;
+    
+    .nav-icon{
+      margin-left:22px;
+      cursor: pointer;
+    }
+    .profile{
+      width: 22px; height: 22px;
+      margin-left:22px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+// Main separation 스토리+포스트
+.main{
+  width: 935px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  overflow: hidden;
+  
+  .main-left{
+    padding-right: 28px;
+  }
+  .main-right{
+
+  }
+}
+
+
+// 스토리 윤서님
+.story{
+  width: 612px; height: 84px;
+  background-color: rgba(var(--d87,255,255,255),1);
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 3px;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  position: relative;
+  .story-contents{
+    width: 100%; height: 100%;
+    overflow: hidden;
+    ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      li{
+        width: 80px; height: 84px;
+        div{
+          width: 63px; height: 63px;
+          margin: 0 auto;
+          border: 3px solid rgba(var(--b6a,219,219,219),1);
+          border-radius: 100%;
+          position: relative;
+          img{
+            background-color: #eee;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            width: 56px; height: 56px;
+            border: 1px solid rgba(var(--i1d,38,38,38),1);
+            border-radius: 100%;
+            overflow: hidden;
+          }
+        }
+        p{
+          color: #262626;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// 지연님꺼
+
+.post-wrap{
+  fox-sizing: border-box;
+  width: 612px;
   background: #fafafa;
   font-size: $fontSize;
   section{
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     article{
       border: 1px solid #dbdbdb;
@@ -50,174 +172,320 @@ main{
             height: 32px;
             background: #000;
             border-radius: 50%;
-            margin: 0;
-          }
-          span{
-            margin-left: $fontSize;
           }
         }
-        .right{
+      }
+    }
+  }
+}
+
+// content
+.content{
+  width: 614px; height: 100%;
+  .img-content{
+    height: 614px; width: 614px;
+    background: #2a9fda;
+  }
+}
+
+    // info
+.info{
+  .details{
+    display: flex;
+    flex-direction: column;
+
+    // det1
+    .det1{
+      @include flex();
+      padding: 8px 16px;
+      line-height: 0.8;
+      @include Mbottom();
+      // l-icon
+      ul{
+        @include flex();
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          display: inline-block;
+          padding: 8px 10px;
+          font-size: 24px;
           cursor: $Point;
         }
       }
-
-      // content
-      .content{
-        width: 100%; height: 100%;
-        .img-content{
-          width: 100%;
-          height: 614px;
-          background: #2a9fda;
+      // r-icon
+      .r-icon{
+        font-size: 28px;
+        padding: 8px 10px;
+        cursor: $Point;
+      }
+    }
+    // det2
+    .det2{
+      @include flex(flex-start, flex);
+      @include Mbottom();
+      padding: 0 16px;
+      .another-user{
+        margin-right: 4px;
+        // padding: 8px 10px;
+        span{
+          display: block;
+          background: #000;
+          width: 20px; height: 20px;
+          border-radius: 50%; 
+          cursor: $Point;
         }
       }
-
-      // info
-      .info{
-        .details{
-          display: flex;
-          flex-direction: column;
-
-          // det1
-          .det1{
-            @include flex();
-            padding: 8px 16px;
-            line-height: 0.8;
-            @include Mbottom();
-            // l-icon
-            ul{
-              @include flex();
-              list-style: none;
-              padding: 0;
-              margin: 0;
-              li{
-                display: inline-block;
-                padding: 8px 10px;
-                font-size: 24px;
-                cursor: $Point;
-              }
-            }
-            // r-icon
-            .r-icon{
-              font-size: 28px;
-              padding: 8px 10px;
-              cursor: $Point;
+      .text{
+        a{
+          cursor: $Point;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    // det3
+    .bulletin{
+      padding: 0 26px;
+      display: flex;
+      flex-direction: column;
+      @include Mbottom();
+      .btn{
+        background: transparent;
+        border: 0;
+        color: $assortColor
+      }
+    }
+    // det4
+    .det4{
+      @include Mbottom();
+      .comment{
+        color: $assortColor;
+        cursor: $Point;
+      }
+    }
+    // det5
+    .det5{
+      @include flex();
+      @include Mbottom();
+      .comment-1{
+        .nick-name{
+          font-weight: 600;
+          cursor: $Point;
+        }
+        .record{
+          a{
+            color: #00376b;
+            cursor: $Point;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
             }
           }
-          // det2
-          .det2{
-            @include flex(flex-start, flex);
-            @include Mbottom();
-            padding: 0 16px;
-            .another-user{
-              margin-right: 4px;
-              // padding: 8px 10px;
-              span{
-                display: block;
-                background: #000;
-                width: 20px; height: 20px;
-                border-radius: 50%; 
-                cursor: $Point;
-              }
-            }
-            .text{
-              a{
-                cursor: $Point;
-                &:hover{
-                  text-decoration: underline;
-                }
-              }
-            }
-
-          }
-
-          // det3
-          .bulletin{
-            padding: 0 26px;
-            display: flex;
-            flex-direction: column;
-            @include Mbottom();
-            .btn{
-              background: transparent;
-              border: 0;
-              color: $assortColor
-            }
-          }
-
-          // det4
-          .det4{
-            @include Mbottom();
-            .comment{
-              color: $assortColor;
-              cursor: $Point;
-            }
-          }
-
-          // det5
-          .det5{
-            @include flex();
-            @include Mbottom();
-            .comment-1{
-              .nick-name{
-                font-weight: 600;
-                cursor: $Point;
-              }
-              .record{
-                a{
-                  color: #00376b;
-                  cursor: $Point;
-                  text-decoration: none;
-                  &:hover{
-                    text-decoration: underline;
-                  }
-                }
-              }
-            }
-          }
-
-          //det6
-          .det6{
-            padding: 0 26px;
-            margin-bottom: 16px;
+        }
+      }
+    }
+    //det6
+    .det6{
+      padding: 0 26px;
+      margin-bottom: 16px;
+      color: $assortColor;
+      a{
+        font-size: 10px;
+        letter-spacing: 0.2px;
+      }
+    }
+    //det7
+    .det7{
+      padding: 10px 26px;
+      border-top: 1px solid #efefef;
+      background: #fff;
+      form{
+        @include flex(space-between, flex);
+        flex-direction: row;
+        .box1{
+          @include flex(normal, flex);
+          .smile{font-size: 24px;}
+          textarea{
             color: $assortColor;
-            a{
-              font-size: 10px;
-              letter-spacing: 0.2px;
-            }
-          }
-
-          //det7
-          .det7{
-            padding: 10px 26px;
-            border-top: 1px solid #efefef;
-            background: #fff;
-            
-            form{
-              @include flex(space-between, flex);
-              flex-direction: row;
-              .box1{
-                @include flex(normal, flex);
-
-                .smile{font-size: 24px;}
-                textarea{
-                  color: $assortColor;
-                  border: 0;
-                  resize: none;
-                  height: auto;
-                  padding: 0;
-                  padding-left: 20px;
-                }
-              }
-              button{
-                color: #0095f6;
-                opacity: .3;
-                border: 0;
-                background: transparent;
-              }
-            }
-            
+            border: 0;
+            resize: none;
+            height: auto;
+            padding: 0;
+            padding-left: 20px;
           }
         }
+        button{
+          color: #0095f6;
+          opacity: .3;
+          border: 0;
+          background: transparent;
+        }
       }
-    }  
+    }
+  }
+}
+
+
+
+
+
+
+
+
+//계정프로필&추천 지화꺼
+.content{
+  width: 935px;
+  padding-top: 30px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+
+  .left-content{
+    border: olive 1px solid;
+    width: 614px;
+    height: 300vh;
+    max-width: 614px;
+    margin-right: 28px;
+    float: left;
+  }
+  
+  .right-content{
+    border: peru 1px solid;
+    
+    width: 100%;
+    max-width: 293px;
+    height: 969px;
+    
+    position: fixed;
+    top: 88px;
+    left: 1126px;
+    margin-bottom: 30px;
+  }  
+}
+
+
+
+
+.profile-card{
+  width: 293px;
+  height: 56px;
+  margin: 18px 0 10px;
+  position: fixed;
+  display: flex;
+
+  .profile-img{
+    width:56px; height:56px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: rosybrown;
+    position: relative;
+    
+    img{
+      width: 100%;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+
+.profile-info{
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .profile-id{
+    color: rgb(38, 38, 38);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .profile-msg{
+    color: rgb(38, 38, 38);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .user-recommend{
+    top:155px;
+    color:gray;
+  }
+}
+
+.btn-trans{
+  padding: 0; 
+  border: none;
+  background: none;
+}
+.trans{
+  color:#0095f6;
+  font-size: 14px;
+  font-weight: 600;
+  width: auto;
+}
+
+.showall{
+  top:155px; left:1364px;
+  font-size:0.9rem;
+}
+
+
+.suggestion{
+  display: flex;
+  position: fixed;
+  top:220px; left:1126px;
+  font-weight:600;
+  .re2profile{
+    position: fixed;
+    left:1136px;
+    width:32px; height:32px;
+  }
+  .user-recommend{
+    position: fixed;
+    top:203px; left:1185px;
+    font-size:0.85rem;
+  }
+  .follow{
+    position: fixed;
+    top:215px; left:1384px;
+    color:#0095f6;
+    font-size:0.75rem;
+  }
+  .re2profile-2{
+    position: fixed;
+    left:1136px; top:270px;
+    width:32px; height:32px;
+  }
+  .user-recommend2{
+    position: fixed;
+    top:253px; left:1185px;
+    font-size:0.85rem;
+  }
+  .follow2{
+    position: fixed;
+    top:265px; left:1384px;
+    color:#0095f6;
+    font-size:0.75rem;
+  }
+  .re2profile-3{
+    position: fixed;
+    left:1136px; top:320px;
+    width:32px; height:32px;
+  }
+  .user-recommend3{
+    position: fixed;
+    top:305px; left:1185px;
+    font-size:0.85rem;
+  }
+  .follow3{
+    position: fixed;
+    top:315px; left:1384px;
+    color:#0095f6;
+    font-size:0.75rem;
   }
 }
