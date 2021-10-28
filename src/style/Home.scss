@@ -1,5 +1,5 @@
 
-
+// 헤더
 
 header{
   height:53px;
@@ -38,11 +38,26 @@ header{
     }
   }
 }
+
+
+// Main separation 
+
+
 .main{
   width: 935px;
   margin: 0 auto;
   padding-top: 30px;
+  display: flex;
+  .main-left{
+    padding-right: 28px;
+  }
+  .main-right{
+
+  }
 }
+
+
+// 스토리
 .story{
   width: 612px; height: 84px;
   background-color: rgba(var(--d87,255,255,255),1);
@@ -112,22 +127,11 @@ header{
   }
 
 
-.this{
-  color: peru;
-}
-a{
-  text-decoration: none;
-}
 
 
-.hd{
-  height: 53px;
-  background: gray;
-}
 
 
-// Main separation 
-
+//계정프로필&추천
 .content{
   width: 935px;
   padding-top: 30px;
@@ -159,78 +163,7 @@ a{
 }
 
 
-// // Suggestion part
 
-
-// .profile-card{
-//   margin: 18px 0 10px;
-//   height: 56px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   position: relative;
-//   border: 1px solid black;
-//   .profile-pic{
-//     border: 1px solid red;
-//     width: 56px;
-//     height: 56px;
-//     border-radius: 50%;
-//     background: cornflowerblue;
-//     margin-right: 12px;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//   }
-//   .profile-info{
-//     width: 199px;
-//     height: 30px;
-//     .div{
-//       margin-left: 12px;
-//     }
-
-//   }
-// }
-
-
-// .text{
-//   font-size: 14px;
-//   font-weight: 400;
-//   line-height: 18px;
-//   margin: -3px 0 -4px;
-//   color: rgba(0,0,0,0.5);
-// }
-
-// .text-id{
-//   color: rgb(38, 38, 38);
-//   font-weight: 600;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
-
-
-
-
-
-
-section{
-  width: 935px;
-  padding-top: 30px;
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-
-  .main{
-    width:614px; height:300vh;
-    background: rosybrown;
-    margin-right: 28px;
-  }
-
-  aside{
-    position: fixed;
-    top:88px; left:1126px;
-    width:293px; height:937px;
-  }
-}
 
 .profile-card{
   width: 293px;
@@ -256,17 +189,11 @@ section{
 }
 
 
-
-
 .profile-info{
   width: 60%;
   margin: 0 auto;
-  border:  1px solid black;
-
   overflow: hidden;
   text-overflow: ellipsis;
-
-
 
   .profile-id{
     color: rgb(38, 38, 38);
@@ -281,13 +208,11 @@ section{
     line-height: 18px;
   }
 
-
   .user-recommend{
     top:155px;
     color:gray;
   }
 }
-
 
 .btn-trans{
   padding: 0; 
