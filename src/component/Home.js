@@ -1,8 +1,10 @@
+import logo from '../logo.svg'
 import React from 'react'
 import '../style/Home.scss'
 
 export default function Home() {
   return (
+    <>
     <div>
       <header>
         <img src="./img/instalogo.png" className="logo" />
@@ -40,5 +42,51 @@ export default function Home() {
       
 
     
+
+      <div className="hd">
+      </div>
+
+      
+      <section>
+          <div className="main" />
+          <aside>
+            <div className="profile-card">
+              <div className="profile-img">
+                <img src={logo} />
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">green_project</div>
+                <div className="profile-msg txt">그린</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">전환</div>
+              </button>
+            </div>
+            
+            <div className="suggestion">
+              <div className="suggestion-tit">
+                <p className="user-recommend">회원님을 위한 추천</p>
+                <p className="showall">모두보기</p>
+              </div>
+              <img src={logo} className="re2profile"/>
+                  <p className="user-recommend">green_project<br></br>회원님을 위한 추천</p>
+                  <p className="follow">팔로우</p>
+                  <img src={logo} className="re2profile-2"/>
+                  <p className="user-recommend2">javaStudy<br></br>회원님을 위한 추천</p>
+                  <p className="follow2">팔로우</p>
+                  <img src={logo} className="re2profile-3"/>
+                  <p className="user-recommend3">clone_project<br></br>회원님을 위한 추천</p>
+                  <p className="follow3">팔로우</p>
+            </div>
+            <div className="footer-nav">
+            </div>
+
+          </aside>
+
+      </section>
+
+
+    
+    </>
   )
 }
