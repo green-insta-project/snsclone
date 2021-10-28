@@ -30,45 +30,6 @@ textarea:active{
 
 
 main{
-
-  header{
-    height:53px;
-    border-bottom: 1px solid #ddd;
-    .logo{
-      position: fixed;
-      top:15.5px; left:483.5px;
-      cursor: pointer;
-    }
-    .search{
-      position: fixed;
-      width:210px;
-      top:14px; left:848px;
-      text-align: center;
-      color:gray;
-      border-radius:3px;
-      border: 1px solid #ddd;
-      padding:5px;
-    }
-    .searchicon{
-      position: fixed;
-      top:15px; left:850px;
-    }
-    .icon{
-      position: fixed;
-      top:15.5px; left:1155px;
-      
-      .nav-icon{
-        margin-left:22px;
-        cursor: pointer;
-      }
-      .profile{
-        width: 22px; height: 22px;
-        margin-left:22px;
-        cursor: pointer;
-      }
-    }
-  }
-
   box-sizing: border-box;
   background: #fafafa;
   font-size: $fontSize;
@@ -259,10 +220,4 @@ main{
       }
     }  
   }
-}
-// .this{
-//   color: peru;
-// }
-.this{
-  color: peru;
 }
