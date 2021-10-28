@@ -1,3 +1,4 @@
+import logo from '../logo.svg'
 import React from 'react'
 import '../style/Home.scss'
 import story from './img/story.jpg'
@@ -41,64 +42,87 @@ export default function Home() {
       </header>
 
       <div className="main">
-        <div className="story">
-          <div className="story-contents">
-            <ul>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-              <li>
-                <div>
-                  <img src={story}/>
-                </div>
-                <p>yoons_93</p>
-              </li>
-            </ul>
+        <div className="main-left">
+          <div className="story">
+            <div className="story-contents">
+              <ul>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+                <li>
+                  <div>
+                    <img src={story}/>
+                  </div>
+                  <p>yoons_93</p>
+                </li>
+              </ul>
+            </div>
+            <div className="story-arrow">
+              {/* <button className="story-leftarrow"> <IoIosArrowDropleftCircle/> </button>
+              <button className="story-rightarrow"> <IoIosArrowDroprightCircle/> </button> */}
+            </div>
+            
           </div>
-          <div className="story-arrow">
-            {/* <button className="story-leftarrow"> <IoIosArrowDropleftCircle/> </button>
-            <button className="story-rightarrow"> <IoIosArrowDroprightCircle/> </button> */}
+          {/* 지연님 */}
+        </div>
+
+        <div className="main-right">
+          <div className="profile-card">
+            <div className="profile-img">
+              <img src={logo} />
+            </div>
+            <div className="profile-info">
+              <div className="profile-id txt">green_project</div>
+              <div className="profile-msg txt">그린</div>
+            </div>
+            <button className="btn-trans">
+              <div className="trans">전환</div>
+            </button>
           </div>
-          
+          <div className="suggestion">
+          </div>
+          <div className="footer-nav">
+          </div>
         </div>
       </div>
       
+      
 
-     </> 
 
     
+    </>
   )
 }
