@@ -1,5 +1,172 @@
+// *{
+//   margin: 0;
+//   padding: 0;
+  
+// }
 
+  
+  .every{
+    margin: 82px auto;
+    justify-content: center;
+    background: #fafafa;
+    // float: left;
+    display: flex;
+    width: 100%;
+    // padding-bottom: 72px;
 
-.this{
-  color: peru;
-}
+      // Login페이지 좌측에 있는 반응형 부분
+      .mobile{
+        
+        .samsung{
+          position: sticky;
+          left: 33%;
+          top: 0;
+          width: 290px;
+          z-index: 1;
+        }
+        .iphone{
+          left: 22%;
+          position: sticky;
+          width: 270px;
+          top: 25%;
+          z-index: 999;
+          padding-right: 20px;
+        }
+        
+      }
+      
+      // Login페이지 우측에 있는 로그인 부분
+
+      .login{
+        text-align: center;
+        background-color: rgba(var(255,255,255),1);
+        padding-top: 4%;
+        
+  
+
+        .loginA{
+          top: 18%;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          border: 1px solid #dbdbdb;
+          background: white;
+          
+          h1{    
+            font-family: 'Lobster', cursive;
+          }
+          p{
+           input{
+            padding: 7px 32px;
+            border: 1px solid #dbdbdb;
+            background: #fafafa;
+           }
+          }
+          .loginbutton{
+            // padding: 20px 50px;
+            
+              input{
+                padding: 5px 100px;
+                color: white;
+                background: #b2dffc;
+                font-weight: bolder;
+                border: none;
+                margin: 8px 40px;
+              }
+          }
+          .or{
+            color: #8e8e8e;
+            font-size: 13px;
+          }
+          .facebook{
+            color: #385185;
+            font-size: 14px;
+            font-weight: bolder;
+          }
+          .forgot{
+            color: #00376B;
+            font-size: 12px;
+
+          }
+
+        }
+
+        .loginB{
+          background: white;
+          border: 1px solid #dbdbdb;
+          // margin: 0 0 10px;
+          margin-top: 15px;
+          padding: 20px 60px;
+          font-size: 14px;
+              a{
+                padding: 0 10px;
+                margin-top: 15px;
+              }
+              .point{
+               
+                color: #0095f6;
+                font-weight: 700;
+                
+              }
+            
+          
+        }
+
+        .loginC{
+          
+          p{
+          
+          }
+          .appstore{
+            width: 130px;
+            padding-right: 7px;
+          }
+          .googleplay{
+            width: 130px;
+          }
+        }
+
+      }
+    
+  }
+
+  
+  footer{
+    position: relative;
+    float: left;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #fafafa;
+    
+    ul{
+      display: block;
+      padding: 2% 16%;
+      list-style: none;
+      text-align: center;
+      margin-left: 150px;
+      
+
+      
+      li{
+        float: left;
+        padding-left: 10px;
+        color: #8e8e8e;
+        font-size: 12px;
+        line-height: 40px;
+      }
+    }
+    p{
+
+      p{
+        float: left;
+        left: 20%;
+        text-align: center;
+        align-items: center;
+        color: #8e8e8e;
+        font-size: 12px;
+        margin-left: 20px;
+      }
+    }
+    
+  }
+
