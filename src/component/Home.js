@@ -1,9 +1,12 @@
 import React from 'react'
 import '../style/Home.scss'
+import story from './img/story.jpg'
+// import { IoIosArrowDropleftCircle } from "react-icons/io";
+// import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <header>
         <img src="./img/instalogo.png" className="logo" />
         
@@ -36,8 +39,65 @@ export default function Home() {
           <img alt="" class="profile" crossorigin="anonymous" data-testid="user-avatar" draggable="false" src="./img/HappyNewYear_2018.png"></img>
         </div>
       </header>
-    </div>
+
+      <div className="main">
+        <div className="story">
+          <div className="story-contents">
+            <ul>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+              <li>
+                <div>
+                  <img src={story}/>
+                </div>
+                <p>yoons_93</p>
+              </li>
+            </ul>
+          </div>
+          <div className="story-arrow">
+            {/* <button className="story-leftarrow"> <IoIosArrowDropleftCircle/> </button>
+            <button className="story-rightarrow"> <IoIosArrowDroprightCircle/> </button> */}
+          </div>
+          
+        </div>
+      </div>
       
+
+     </> 
 
     
   )
