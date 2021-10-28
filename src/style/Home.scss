@@ -1,0 +1,226 @@
+$assortColor: #8e8e8e;
+$fontSize: 14px;
+$Point: pointer;
+
+
+@mixin flex($j:space-between,$d:flex) {
+  display: $d;
+  justify-content: $j;
+  align-items: center;
+}
+@mixin Mbottom(){
+  margin-bottom: 4px;
+}
+
+// Reset css
+button,
+input,
+textarea{
+  font-size: inherit;
+}
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+  box-shadow: none;
+  outline: none;
+}
+
+
+main{
+  box-sizing: border-box;
+  background: #fafafa;
+  font-size: $fontSize;
+  section{
+    width: 40%;
+    margin: 0 auto;
+    article{
+      border: 1px solid #dbdbdb;
+      .header{
+        background: #fff;
+        @include flex();
+        padding: 2%;
+        .left{
+          @include flex();
+          cursor: $Point;
+          figure{
+            width: 32px;
+            height: 32px;
+            background: #000;
+            border-radius: 50%;
+            margin: 0;
+          }
+          span{
+            margin-left: $fontSize;
+          }
+        }
+        .right{
+          cursor: $Point;
+        }
+      }
+
+      // content
+      .content{
+        width: 100%; height: 100%;
+        .img-content{
+          width: 100%;
+          height: 614px;
+          background: #2a9fda;
+        }
+      }
+
+      // info
+      .info{
+        .details{
+          display: flex;
+          flex-direction: column;
+
+          // det1
+          .det1{
+            @include flex();
+            padding: 8px 16px;
+            line-height: 0.8;
+            @include Mbottom();
+            // l-icon
+            ul{
+              @include flex();
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              li{
+                display: inline-block;
+                padding: 8px 10px;
+                font-size: 24px;
+                cursor: $Point;
+              }
+            }
+            // r-icon
+            .r-icon{
+              font-size: 28px;
+              padding: 8px 10px;
+              cursor: $Point;
+            }
+          }
+          // det2
+          .det2{
+            @include flex(flex-start, flex);
+            @include Mbottom();
+            padding: 0 16px;
+            .another-user{
+              margin-right: 4px;
+              // padding: 8px 10px;
+              span{
+                display: block;
+                background: #000;
+                width: 20px; height: 20px;
+                border-radius: 50%; 
+                cursor: $Point;
+              }
+            }
+            .text{
+              a{
+                cursor: $Point;
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+
+          }
+
+          // det3
+          .bulletin{
+            padding: 0 26px;
+            display: flex;
+            flex-direction: column;
+            @include Mbottom();
+            .btn{
+              background: transparent;
+              border: 0;
+              color: $assortColor
+            }
+          }
+
+          // det4
+          .det4{
+            @include Mbottom();
+            .comment{
+              color: $assortColor;
+              cursor: $Point;
+            }
+          }
+
+          // det5
+          .det5{
+            @include flex();
+            @include Mbottom();
+            .comment-1{
+              .nick-name{
+                font-weight: 600;
+                cursor: $Point;
+              }
+              .record{
+                a{
+                  color: #00376b;
+                  cursor: $Point;
+                  text-decoration: none;
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+
+          //det6
+          .det6{
+            padding: 0 26px;
+            margin-bottom: 16px;
+            color: $assortColor;
+            a{
+              font-size: 10px;
+              letter-spacing: 0.2px;
+            }
+          }
+
+          //det7
+          .det7{
+            padding: 10px 26px;
+            border-top: 1px solid #efefef;
+            background: #fff;
+            
+            form{
+              @include flex(space-between, flex);
+              flex-direction: row;
+              .box1{
+                @include flex(normal, flex);
+
+                .smile{font-size: 24px;}
+                textarea{
+                  color: $assortColor;
+                  border: 0;
+                  resize: none;
+                  height: auto;
+                  padding: 0;
+                  padding-left: 20px;
+                }
+              }
+              button{
+                color: #0095f6;
+                opacity: .3;
+                border: 0;
+                background: transparent;
+              }
+            }
+            
+          }
+        }
+      }
+    }  
+  }
+}
+// .this{
+//   color: peru;
+// }
