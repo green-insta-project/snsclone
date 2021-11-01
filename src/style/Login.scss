@@ -6,33 +6,30 @@
 
   
   .every{
-    margin: 82px auto;
+    padding-top: 100px ;
     justify-content: center;
-    background: #fafafa;
-    // float: left;
+    background-color: #fafafa;
     display: flex;
     width: 100%;
-    // padding-bottom: 72px;
 
-      // Login페이지 좌측에 있는 반응형 부분
+      // Login페이지 좌측에 있는 반응형 부분(핸드폰 부분)
       .mobile{
-        
-        .samsung{
-          position: sticky;
-          left: 33%;
-          top: 0;
-          width: 290px;
-          z-index: 1;
-        }
-        .iphone{
-          left: 22%;
-          position: sticky;
-          width: 270px;
-          top: 25%;
-          z-index: 999;
-          padding-right: 20px;
-        }
-        
+        background-image: url(https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png);
+        background-position: 0 0;
+        background-size: 454px 618px;
+        -webkit-flex-basis: 454px;
+        -ms-flex-preferred-size: 454px;
+        flex-basis: 454px;
+        height: 618px;
+        margin-left: -35px;
+        margin-right: -15px;
+      
+      }
+      .iphone{
+        position: absolute;
+        width: 170px;
+        // z-index: 3;
+        padding-right: 20px;
       }
       
       // Login페이지 우측에 있는 로그인 부분
@@ -40,7 +37,7 @@
       .login{
         text-align: center;
         background-color: rgba(var(255,255,255),1);
-        padding-top: 4%;
+        padding-top: 1.5%;
         
   
 
@@ -51,40 +48,91 @@
           border: 1px solid #dbdbdb;
           background: white;
           
-          h1{    
-            font-family: 'Lobster', cursive;
+          img{    
+            width: 175px;
+            padding-top: 13px;
+            padding-bottom: 10px;
           }
+          // img{    
+          //   margin-top: 10px;
+          // }
           p{
            input{
-            padding: 7px 32px;
+            padding: 7px 35px;
             border: 1px solid #dbdbdb;
             background: #fafafa;
+            border-radius: 3px;
            }
           }
           .loginbutton{
             // padding: 20px 50px;
             
               input{
-                padding: 5px 100px;
+                padding: 5px 110px;
                 color: white;
                 background: #b2dffc;
                 font-weight: bolder;
                 border: none;
                 margin: 8px 40px;
+                cursor: pointer;
+                border-radius: 3px;
               }
           }
+          .line1{
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            background-color: #dbdbdb;
+            height: 1px;
+            position: relative;
+            top: 0.5rem;
+            width: 6rem;
+            left: 10px;
+            margin-left: 25px;
+          }
+          .line2{
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            background-color: #dbdbdb;
+            height: 1px;
+            position: relative;
+            left: 210px;
+            bottom: 10px;
+            width: 6rem;
+          }
+          
           .or{
             color: #8e8e8e;
             font-size: 13px;
+            // padding-bottom: 7px;
           }
           .facebook{
+            // padding-left: 20px;
             color: #385185;
             font-size: 14px;
             font-weight: bolder;
+            cursor: pointer;
+            padding-bottom: 5px;
+            img{
+              position: relative;
+              width: 13px;
+              padding-right: 5px;
+              
+            }
           }
           .forgot{
             color: #00376B;
             font-size: 12px;
+            cursor: pointer;
 
           }
 
@@ -105,6 +153,7 @@
                
                 color: #0095f6;
                 font-weight: 700;
+                cursor: pointer;
                 
               }
             
@@ -114,14 +163,17 @@
         .loginC{
           
           p{
-          
+            font-size: 14px;
+            padding: 5px 0;
           }
           .appstore{
             width: 130px;
             padding-right: 7px;
+            cursor: pointer;
           }
           .googleplay{
             width: 130px;
+            cursor: pointer;
           }
         }
 
@@ -129,44 +181,33 @@
     
   }
 
-  
+
+  // Login 하단
   footer{
+    padding-top:  85px;
+    padding-bottom: 32px;
     position: relative;
-    float: left;
     align-items: center;
     text-align: center;
     width: 100%;
     background: #fafafa;
+    // background-color: darkgreen;
     
-    ul{
-      display: block;
-      padding: 2% 16%;
-      list-style: none;
-      text-align: center;
-      margin-left: 150px;
-      
-
-      
-      li{
-        float: left;
-        padding-left: 10px;
-        color: #8e8e8e;
-        font-size: 12px;
-        line-height: 40px;
-      }
-    }
     p{
-
-      p{
-        float: left;
-        left: 20%;
+      a{
         text-align: center;
         align-items: center;
         color: #8e8e8e;
         font-size: 12px;
-        margin-left: 20px;
+        margin-left: 15px;
+        cursor: pointer;
       }
     }
     
   }
 
+  @media (max-width:876px){
+    .mobile{
+     display: none;
+    }
+  }

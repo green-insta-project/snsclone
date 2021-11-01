@@ -1,3 +1,44 @@
+
+// 지연님 숙제
+$assortColor: #8e8e8e;
+$fontSize: 14px;
+$Point: pointer;
+
+
+@mixin flex($j:space-between,$d:flex) {
+  display: $d;
+  justify-content: $j;
+  align-items: center;
+}
+@mixin Mbottom(){
+  margin-bottom: 4px;
+}
+
+
+// Reset css
+button,
+input,
+textarea{
+  font-size: inherit;
+}
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+
+
+
+
+// 탑 소희님 
+
 header{
   height:53px;
   border-bottom: 1px solid #ddd;
@@ -35,48 +76,73 @@ header{
     }
   }
 }
+
+
+
+
+
+// Main separation 스토리+포스트
 .main{
-  width: 935px;
+  width: 60%;
+  max-width: 935px;
+  width: 100%;
+  height: 300vh;
   margin: 0 auto;
   padding-top: 30px;
+  display: flex;
+  overflow: hidden;
+  border:  1px solid black;
+  
+  .main-left{
+    padding-right: 28px;
+
+  }
+  .main-right{
+    max-width: 293px;
+    width: 100%;
+    position: fixed;
+    left: 1126px; top: 88px;
+    //FIX 위치 잡기 
+  }
 }
+
+
+// 스토리 윤서님
 .story{
   width: 612px; height: 84px;
   background-color: rgba(var(--d87,255,255,255),1);
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 3px;
-  padding: 16px 0;
+  padding: 14px 0;
   margin-bottom: 24px;
   position: relative;
-    .story-contents{
-      width: 100%; height: 100%;
-      overflow: hidden;
-      ul{
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        li{
-          width: 80px; height: 84px;
+  .story-contents{
+    width: 100%; height: 100%;
+    overflow: hidden;
+    ul{
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li{
+        flex-shrink: 0;
+        width: 76px; height: 82px;
+        padding: 0 4px;
+        position: relative;
+        div{
+          position: absolute;
+          left: 50%; top: 50%;
+          transform: translate(-50%, -55%);
           
-          div{
-            width: 63px; height: 63px;
-            margin: 0 auto;
-            border: 3px solid rgba(var(--b6a,219,219,219),1);
+          width: 56px; height: 56px;
+          border-radius: 100%;
+          margin: 0 auto;
+          
+          & > img{
+            background-color: #eee;
+            width: 100%;
             border-radius: 100%;
-            position: relative;
-            img{
-              background-color: #eee;
-              position: absolute;
-              left: 50%; top: 50%;
-              transform: translate(-50%, -50%);
-              width: 56px; height: 56px;
-              border: 1px solid rgba(var(--i1d,38,38,38),1);
-              border-radius: 100%;
-              overflow: hidden;
-            }
-            
+            overflow: hidden;
           }
           p{
             color: #262626;
@@ -86,24 +152,364 @@ header{
             margin: 0;
           }
         }
+        &:nth-of-type(1){
+          padding-left: 10px;
+        }
       }
     }
-    .story-arrow{
-      .story-leftarrow{
-        position: absolute;
-        left: 10px; top: 50%;
-        transform: translate(0, -50%);
+  }
+  .story-svg{
+    width: 100%;
+  }
+  .story-arrow{
+    
+    .story-leftarrow{
+      outline: 0;border: 0;
+      background-color: transparent;
 
-        width: 20px; height: 20px;
-        border-radius: 20px;
-      }
-      .story-rightarrow{
-        position: absolute;
-        right: 10px; top: 50%;
-        transform: translate(0, -50%);
-
-        width: 20px; height: 20px;
-        border-radius: 20px;
-      }
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
     }
+    .story-rightarrow{
+      outline: 0;border: 0;
+      background-color: transparent;
+
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);  
+    }
+  }
 }
+
+
+// 지연님꺼
+
+.post-wrap{
+  box-sizing: border-box;
+  width: 612px;
+  background: #fafafa;
+  font-size: $fontSize;
+  section{
+    width: 100%;
+    margin: 0 auto;
+    article{
+      border: 1px solid #dbdbdb;
+      .header{
+        background: #fff;
+        @include flex();
+        padding: 2%;
+        .left{
+          @include flex();
+          cursor: $Point;
+          figure{
+            width: 32px;
+            height: 32px;
+            background: #000;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// content
+.content{
+  width: 614px; height: 100%;
+  .img-content{
+    height: 614px; width: 614px;
+    background: #2a9fda;
+  }
+}
+
+    // info
+.info{
+  .details{
+    display: flex;
+    flex-direction: column;
+
+    // det1
+    .det1{
+      @include flex();
+      padding: 8px 16px;
+      line-height: 0.8;
+      @include Mbottom();
+      // l-icon
+      ul{
+        @include flex();
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          display: inline-block;
+          padding: 8px 10px;
+          font-size: 24px;
+          cursor: $Point;
+        }
+      }
+      // r-icon
+      .r-icon{
+        font-size: 28px;
+        padding: 8px 10px;
+        cursor: $Point;
+      }
+    }
+    // det2
+    .det2{
+      @include flex(flex-start, flex);
+      @include Mbottom();
+      padding: 0 16px;
+      .another-user{
+        margin-right: 4px;
+        // padding: 8px 10px;
+        span{
+          display: block;
+          background: #000;
+          width: 20px; height: 20px;
+          border-radius: 50%; 
+          cursor: $Point;
+        }
+      }
+      .text{
+        a{
+          cursor: $Point;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    // det3
+    .bulletin{
+      padding: 0 26px;
+      display: flex;
+      flex-direction: column;
+      @include Mbottom();
+      .btn{
+        background: transparent;
+        border: 0;
+        color: $assortColor
+      }
+    }
+    // det4
+    .det4{
+      @include Mbottom();
+      .comment{
+        color: $assortColor;
+        cursor: $Point;
+      }
+    }
+    // det5
+    .det5{
+      @include flex();
+      @include Mbottom();
+      .comment-1{
+        .nick-name{
+          font-weight: 600;
+          cursor: $Point;
+        }
+        .record{
+          a{
+            color: #00376b;
+            cursor: $Point;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    //det6
+    .det6{
+      padding: 0 26px;
+      margin-bottom: 16px;
+      color: $assortColor;
+      a{
+        font-size: 10px;
+        letter-spacing: 0.2px;
+      }
+    }
+    //det7
+    .det7{
+      padding: 10px 26px;
+      border-top: 1px solid #efefef;
+      background: #fff;
+      form{
+        @include flex(space-between, flex);
+        flex-direction: row;
+        .box1{
+          @include flex(normal, flex);
+          .smile{font-size: 24px;}
+          textarea{
+            color: $assortColor;
+            border: 0;
+            resize: none;
+            height: auto;
+            padding: 0;
+            padding-left: 20px;
+          }
+        }
+        button{
+          color: #0095f6;
+          opacity: .3;
+          border: 0;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+//계정프로필&추천 지화꺼
+
+
+.profile-card{
+  width: 100%;
+  padding: 18px 0 10px;
+  display: flex;
+  align-items: center;
+  .profile-img{
+    width:56px; height:56px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: rosybrown;
+    position: relative;
+    img{
+      width: 100%;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .profile-info{
+    width: 195px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 4px;
+    .profile-id{
+      color: rgb(38, 38, 38);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      padding-bottom: 2px;
+    }
+    .profile-msg{
+      color:rgb(142, 142, 142);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+  .btn-trans{
+    width: 24px;
+    padding: 0; 
+    border: none;
+    background: none;
+    .trans{
+      color:#0095f6;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+.suggestion{
+  width: 293px;
+  padding: 0 0 4px;
+  .sugg-tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: rgb(38, 38, 38);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    .suggestion-text{
+      color: rgb(142, 142, 142);
+    }
+    .suggestion-more-text{
+      color:rgb(38, 38, 38);
+      font-size: 12px;
+    }
+  }
+  .sugg-card{
+    padding: 0 0 10px;
+    .profile-img-wrap{
+      margin: 0 auto;
+      .profile-img{
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgb(212, 212, 212);
+        img{
+          width: 32px;
+        }
+      }
+    }
+    .profile-info{
+      width: 210px;
+      padding-left: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+        .profile-msg{
+          color:rgb(142, 142, 142);
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    .btn-trans{
+      width: 36px;
+      padding: 0; 
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.footer-nav{
+  ul{
+    list-style: none;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 5px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;    
+    li{
+      color: rgb(199,199,199);
+      padding-bottom: 5px;
+      .lang{
+        display: none;
+      }
+    }
+    a{
+      color: rgb(199,199,199);
+      text-decoration: none;
+      &::after{
+        content: '\00B7';
+        margin: 0 0.25em 0 0.25em;
+      }
+    }
+  }
+  .copyright{
+    text-transform: uppercase;
+    color: rgb(199,199,199);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+}
+
+
