@@ -84,16 +84,25 @@ header{
 // Main separation 스토리+포스트
 .main{
   width: 60%;
+  max-width: 935px;
+  width: 100%;
+  height: 300vh;
   margin: 0 auto;
   padding-top: 30px;
   display: flex;
   overflow: hidden;
+  border:  1px solid black;
   
   .main-left{
     padding-right: 28px;
+
   }
   .main-right{
-
+    max-width: 293px;
+    width: 100%;
+    position: fixed;
+    left: 1126px; top: 88px;
+    //FIX 위치 잡기 
   }
 }
 
@@ -177,7 +186,7 @@ header{
 // 지연님꺼
 
 .post-wrap{
-  fox-sizing: border-box;
+  box-sizing: border-box;
   width: 612px;
   background: #fafafa;
   font-size: $fontSize;
@@ -361,53 +370,19 @@ header{
 
 
 //계정프로필&추천 지화꺼
-.content{
-  width: 935px;
-  padding-top: 30px;
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-
-  .left-content{
-    border: olive 1px solid;
-    width: 614px;
-    height: 300vh;
-    max-width: 614px;
-    margin-right: 28px;
-    float: left;
-  }
-  
-  .right-content{
-    border: peru 1px solid;
-    
-    width: 100%;
-    max-width: 293px;
-    height: 969px;
-    
-    position: fixed;
-    top: 88px;
-    left: 1126px;
-    margin-bottom: 30px;
-  }  
-}
-
-
 
 
 .profile-card{
-  width: 293px;
-  height: 56px;
-  margin: 18px 0 10px;
-  position: fixed;
+  width: 100%;
+  padding: 18px 0 10px;
   display: flex;
-
+  align-items: center;
   .profile-img{
     width:56px; height:56px;
     margin-right: 12px;
     border-radius: 50%;
     background: rosybrown;
     position: relative;
-    
     img{
       width: 100%;
       position: absolute;
@@ -415,103 +390,126 @@ header{
       transform: translate(-50%,-50%);
     }
   }
+  .profile-info{
+    width: 195px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 4px;
+    .profile-id{
+      color: rgb(38, 38, 38);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      padding-bottom: 2px;
+    }
+    .profile-msg{
+      color:rgb(142, 142, 142);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+  .btn-trans{
+    width: 24px;
+    padding: 0; 
+    border: none;
+    background: none;
+    .trans{
+      color:#0095f6;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
 }
 
+.suggestion{
+  width: 293px;
+  padding: 0 0 4px;
+  .sugg-tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.profile-info{
-  width: 60%;
-  margin: 0 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  .profile-id{
     color: rgb(38, 38, 38);
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
+    .suggestion-text{
+      color: rgb(142, 142, 142);
+    }
+    .suggestion-more-text{
+      color:rgb(38, 38, 38);
+      font-size: 12px;
+    }
   }
-  .profile-msg{
-    color: rgb(38, 38, 38);
-    font-size: 14px;
+  .sugg-card{
+    padding: 0 0 10px;
+    .profile-img-wrap{
+      margin: 0 auto;
+      .profile-img{
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgb(212, 212, 212);
+        img{
+          width: 32px;
+        }
+      }
+    }
+    .profile-info{
+      width: 210px;
+      padding-left: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+        .profile-msg{
+          color:rgb(142, 142, 142);
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    .btn-trans{
+      width: 36px;
+      padding: 0; 
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.footer-nav{
+  ul{
+    list-style: none;
+    font-size: 11px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 13px;
+    padding: 5px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;    
+    li{
+      color: rgb(199,199,199);
+      padding-bottom: 5px;
+      .lang{
+        display: none;
+      }
+    }
+    a{
+      color: rgb(199,199,199);
+      text-decoration: none;
+      &::after{
+        content: '\00B7';
+        margin: 0 0.25em 0 0.25em;
+      }
+    }
   }
-
-  .user-recommend{
-    top:155px;
-    color:gray;
-  }
-}
-
-.btn-trans{
-  padding: 0; 
-  border: none;
-  background: none;
-}
-.trans{
-  color:#0095f6;
-  font-size: 14px;
-  font-weight: 600;
-  width: auto;
-}
-
-.showall{
-  top:155px; left:1364px;
-  font-size:0.9rem;
-}
-
-
-.suggestion{
-  display: flex;
-  position: fixed;
-  top:220px; left:1126px;
-  font-weight:600;
-  .re2profile{
-    position: fixed;
-    left:1136px;
-    width:32px; height:32px;
-  }
-  .user-recommend{
-    position: fixed;
-    top:203px; left:1185px;
-    font-size:0.85rem;
-  }
-  .follow{
-    position: fixed;
-    top:215px; left:1384px;
-    color:#0095f6;
-    font-size:0.75rem;
-  }
-  .re2profile-2{
-    position: fixed;
-    left:1136px; top:270px;
-    width:32px; height:32px;
-  }
-  .user-recommend2{
-    position: fixed;
-    top:253px; left:1185px;
-    font-size:0.85rem;
-  }
-  .follow2{
-    position: fixed;
-    top:265px; left:1384px;
-    color:#0095f6;
-    font-size:0.75rem;
-  }
-  .re2profile-3{
-    position: fixed;
-    left:1136px; top:320px;
-    width:32px; height:32px;
-  }
-  .user-recommend3{
-    position: fixed;
-    top:305px; left:1185px;
-    font-size:0.85rem;
-  }
-  .follow3{
-    position: fixed;
-    top:315px; left:1384px;
-    color:#0095f6;
-    font-size:0.75rem;
+  .copyright{
+    text-transform: uppercase;
+    color: rgb(199,199,199);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
   }
 }
+
+
