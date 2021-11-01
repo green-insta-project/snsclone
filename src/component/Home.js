@@ -6,11 +6,16 @@ import { IoChatbubbleOutline } from "react-icons/io5";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { FiBookmark } from "react-icons/fi";
 import { BiSmile } from "react-icons/bi";
-import story from "./img/story.jpg";
+import storyimg from "./img/story.jpg";
 import logo from "../logo.svg";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Img from "./Img";
+import "../style/Home.scss";
+import storysvg from "./img/story.svg";
+// import { IoIosArrowDropleftCircle } from "react-icons/io";
+// import { IoIosArrowDroprightCircle } from "react-icons/io";
+
 
 
 
@@ -129,52 +134,66 @@ export default function Home() {
             <div className="story-contents">
               <ul>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
                 </li>
                 <li>
+                    <img src={storysvg} className="story-svg"/>
                   <div>
-                    <img src={story} />
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
                   </div>
-                  <p>yoons_93</p>
+                </li>
+                <li>
+                    <img src={storysvg} className="story-svg"/>
+                  <div>
+                    <img src={storyimg} />
+                    <p>yoons_93</p>
+                  </div>
                 </li>
               </ul>
             </div>
             <div className="story-arrow">
-              {/* <button className="story-leftarrow"> <IoIosArrowDropleftCircle/> </button>
-              <button className="story-rightarrow"> <IoIosArrowDroprightCircle/> </button> */}
+              <button className="story-leftarrow"> <IoIosArrowDropleftCircle size="1.8em" color="#fff"/> </button>
+              <button className="story-rightarrow"> <IoIosArrowDroprightCircle size="1.8em" color="#fff"/> </button>
             </div>
           </div>
           {/* 지연님 */}
