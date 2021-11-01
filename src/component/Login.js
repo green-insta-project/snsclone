@@ -2,8 +2,19 @@ import React from 'react';
 import '../style/Login.scss';
 import Img from './img/4a5c9d62d51b.png'; 
 import Img1 from './img/f155b664a93b.png';
-import Iphone from './img/IPhone6.png'; 
-import Samsung from './img/Samsung1.png';
+
+import Img2 from './img/ff2c097a681e.jpg';
+import Img3 from './img/b27a108592d8.jpg';
+import Img4 from './img/177140221987.jpg';
+import Img5 from './img/9144d6673849.jpg';
+import Img6 from './img/5e04169b9308.jpg';
+import Insta from './img/instagram1.png';
+import Facebook from './img/facebook.png'
+
+
+
+
+
 
 
 export default function Login() {
@@ -13,10 +24,13 @@ export default function Login() {
     {/* Login페이지 좌측에 있는 반응형 부분 */}
 
       <div className="mobile">
-        <img className="samsung" src={Samsung}></img>
-         <img className="iphone" src={Iphone}></img> 
-         
-
+      </div>
+      <div className="iphone">
+        {/* <img src={Img2}/>
+        <img src={Img3}/>
+        <img src={Img4}/>
+        <img src={Img5}/>
+        <img src={Img6}/> */}
       </div>
 
 
@@ -26,20 +40,24 @@ export default function Login() {
       <div className="login">
         
         <form className="loginA">
-                <h1>Instagram</h1>
+        {/* <img src="./img/instalogo.png" className="logo" /> */}
+                <img src={Insta}/>
                 <p>
-                    <input label-label="전화번호, 사용자 이름 또는 이메일"  type="text" />
+                    <input placeholder="전화번호, 사용자 이름 또는 이메일"  type="text" />
                 </p>
                 <p>
-                    <input aria-label="비밀번호" type="password" />
+                    <input placeholder="비밀번호" type="password" />
                 </p>
                 <p className="loginbutton">
                     <input type="submit" value="로그인" />
                 </p>
-                <p className="or">
+                <div className="line1" />
+                <div className="or">
                   또는  
-                </p>
+                </div>
+                <div className="line2" />
                 <p className="facebook">
+                  {/* <img src={Facebook}/> */}
                   Facebook으로 로그인
                 </p>
                 <p className="forgot">
@@ -55,44 +73,52 @@ export default function Login() {
           </div>
           
           <div className="loginC">
-            <p>앱을 다운하세요.</p>
-            <img className="appstore" src={Img} />
-            <img className="googleplay" src={Img1} />
-
+            <p>앱을 다운로드하세요.</p>
+            <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo">
+              <img className="appstore" src={Img} />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=5E62D154-D422-44CE-9B1E-CFFB26FA7B19&utm_content=lo&utm_medium=badge">
+              <img className="googleplay" src={Img1} />
+            </a>
           </div>
 
         </div>
     </div>
 
-        <footer>
-          <ul>
-            <li>소개</li>
-            <li>블로그</li>
-            <li>채용 정보</li>
-            <li>도움말</li>
-            <li>API</li>
-            <li>개인정보처리방침</li>
-            <li>약관</li>
-            <li>인기 계정</li>
-            <li>해시태그</li>
-            <li>위치</li>
-            <li>Instagram Lite</li>
-            <li>뷰티</li>
-            <li>댄스</li>
-            <li>피트니스</li>
-            <li>식음료</li>
-            <li>집 및 정원</li>
-            <li>음악</li>
-            <li>시각 예술</li>
-          </ul>
+    <footer>
+     
+      <p>
+        <a>Meta</a>
+        <a>소개</a>
+        <a>블로그</a>
+        <a>채용 정보</a>
+        <a>도움말</a>
+        <a>API</a>
+        <a>개인정보처리방침</a>
+        <a>약관</a>
+        <a>인기 계정</a>
+        <a>해시태그</a>
+        <a>위치</a>
+        <a>Instagram Lite</a>
+      </p>
+      
+      <p>        
+        <a>뷰티</a>
+        <a>댄스</a>
+        <a>피트니스</a>
+        <a>식음료</a>
+        <a>집 및 정원</a>
+        <a>음악</a>
+        <a>시각 예술</a>
+      </p>
 
-          <p>
-            <p>한국어▽ </p>
-            <p>ⓒ2021 Instagram from Facebook</p>
-        </p>
-          
-          
-        </footer>
+      <p>
+        <a>한국어▽ </a>
+        <a>ⓒ2021 Instagram from Facebook</a>
+      </p>
+      
+      
+    </footer>
         
       
    
