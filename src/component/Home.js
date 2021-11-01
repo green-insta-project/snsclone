@@ -12,7 +12,13 @@ import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Img from "./Img";
 
+
+
+
 export default function Home() {
+
+
+  
   return (
     <>
       <header>
@@ -315,8 +321,174 @@ export default function Home() {
               <div className="trans">전환</div>
             </button>
           </div>
-          <div className="suggestion"></div>
-          <div className="footer-nav"></div>
+          <div className="suggestion">
+            <div className="sugg-tit">
+              <p className="suggestion-text aside-text">회원님을 위한 추천</p>
+              <p className="suggestion-more-text aside-text">모두 보기</p>
+            </div>
+            <div className="profile-card sugg-card">
+              <div className="profile-img-wrap">
+                <div className="profile-img">
+                  <img src={logo} />
+                </div>
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">sohee</div>
+                <div className="profile-msg txt">김소희</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">팔로우</div>
+              </button>
+            </div>
+            <div className="profile-card sugg-card">
+              <div className="profile-img-wrap">
+                <div className="profile-img">
+                  <img src={logo} />
+                </div>
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">jiyeon</div>
+                <div className="profile-msg txt">박지연</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">팔로우</div>
+              </button>
+            </div>
+            <div className="profile-card sugg-card">
+              <div className="profile-img-wrap">
+                <div className="profile-img">
+                  <img src={logo} />
+                </div>
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">jihwa</div>
+                <div className="profile-msg txt">윤지화</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">팔로우</div>
+              </button>
+            </div>
+            <div className="profile-card sugg-card">
+              <div className="profile-img-wrap">
+                <div className="profile-img">
+                  <img src={logo} />
+                </div>
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">yoonseo</div>
+                <div className="profile-msg txt">최윤서</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">팔로우</div>
+              </button>
+            </div>
+            <div className="profile-card sugg-card">
+              <div className="profile-img-wrap">
+                <div className="profile-img">
+                  <img src={logo} />
+                </div>
+              </div>
+              <div className="profile-info">
+                <div className="profile-id txt">jooeun</div>
+                <div className="profile-msg txt">최주은</div>
+              </div>
+              <button className="btn-trans">
+                <div className="trans">팔로우</div>
+              </button>
+            </div>
+          </div>
+          <div className="footer-nav">
+            <ul>
+              <li>
+                <a className="footer-li-text" href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank">소개</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="https://help.instagram.com/">도움말</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="https://about.instagram.com/blog/">홍보 센터</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer" target="_blank">API</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="/about/jobs/">채용 정보</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="/legal/privacy/">개인정보처리방침</a>
+              </li>
+              <li>
+                <a className="footer-li-text _vfM2" href="/legal/terms/">약관</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="/explore/locations/">위치</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="/directory/profiles/">인기 계정</a>
+              </li>
+              <li>
+                <a className="footer-li-text" href="/directory/hashtags/">해시태그</a>
+              </li>
+              <li>
+                <span className="btn-lang">언어
+                  <select aria-label="표시 언어 변경" className="lang">
+                    <option value="af">Afrikaans</option>
+                    <option value="cs">Čeština</option>
+                    <option value="da">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="en">English</option>
+                    <option value="en-gb">English (UK)</option>
+                    <option value="es">Español (España)</option>
+                    <option value="es-la">Español</option>
+                    <option value="fi">Suomi</option>
+                    <option value="fr">Français</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="nb">Norsk</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="pl">Polski</option>
+                    <option value="pt-br">Português (Brasil)</option>
+                    <option value="pt">Português (Portugal)</option>
+                    <option value="ru">Русский</option>
+                    <option value="sv">Svenska</option>
+                    <option value="th">ภาษาไทย</option>
+                    <option value="tl">Filipino</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="zh-cn">中文(简体)</option>
+                    <option value="zh-tw">中文(台灣)</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="hr">Hrvatski</option>
+                    <option value="hu">Magyar</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ml">മലയാളം</option>
+                    <option value="mr">मराठी</option>
+                    <option value="ne">नेपाली</option>
+                    <option value="pa">ਪੰਜਾਬੀ</option>
+                    <option value="si">සිංහල</option>
+                    <option value="sk">Slovenčina</option>
+                    <option value="ta">தமிழ்</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="zh-hk">中文(香港)</option>
+                    <option value="bg">Български</option>
+                    <option value="fr-ca">Français (Canada)</option>
+                    <option value="ro">Română</option>
+                    <option value="sr">Српски</option>
+                    <option value="uk">Українська</option>
+                  </select>
+                </span>
+              </li>
+            </ul>
+
+            <span class="copyright">© 2021 Instagram from Facebook</span>
+          </div>
+
         </div>
       </div>
     </>
