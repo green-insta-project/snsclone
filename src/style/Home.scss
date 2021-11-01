@@ -83,7 +83,7 @@ header{
 
 // Main separation 스토리+포스트
 .main{
-  width: 935px;
+  width: 60%;
   margin: 0 auto;
   padding-top: 30px;
   display: flex;
@@ -104,7 +104,7 @@ header{
   background-color: rgba(var(--d87,255,255,255),1);
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 3px;
-  padding: 16px 0;
+  padding: 14px 0;
   margin-bottom: 24px;
   position: relative;
   .story-contents{
@@ -113,36 +113,62 @@ header{
     ul{
       list-style: none;
       display: flex;
-      flex-wrap: wrap;
       margin: 0;
       padding: 0;
       li{
-        width: 80px; height: 84px;
+        flex-shrink: 0;
+        width: 76px; height: 82px;
+        padding: 0 4px;
+        position: relative;
         div{
-          width: 63px; height: 63px;
-          margin: 0 auto;
-          border: 3px solid rgba(var(--b6a,219,219,219),1);
+          position: absolute;
+          left: 50%; top: 50%;
+          transform: translate(-50%, -55%);
+          
+          width: 56px; height: 56px;
           border-radius: 100%;
-          position: relative;
-          img{
+          margin: 0 auto;
+          
+          & > img{
             background-color: #eee;
-            position: absolute;
-            left: 50%; top: 50%;
-            transform: translate(-50%, -50%);
-            width: 56px; height: 56px;
-            border: 1px solid rgba(var(--i1d,38,38,38),1);
+            width: 100%;
             border-radius: 100%;
             overflow: hidden;
           }
+          p{
+            color: #262626;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            margin: 0;
+          }
         }
-        p{
-          color: #262626;
-          font-size: 12px;
-          line-height: 16px;
-          text-align: center;
-          margin: 0;
+        &:nth-of-type(1){
+          padding-left: 10px;
         }
       }
+    }
+  }
+  .story-svg{
+    width: 100%;
+  }
+  .story-arrow{
+    
+    .story-leftarrow{
+      outline: 0;border: 0;
+      background-color: transparent;
+
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+    }
+    .story-rightarrow{
+      outline: 0;border: 0;
+      background-color: transparent;
+
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);  
     }
   }
 }
