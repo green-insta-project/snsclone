@@ -1,16 +1,16 @@
 import React from "react";
 import "../style/Home.scss";
-import { FaEllipsisH } from "react-icons/fa";
-import { FaRegHeart } from "react-icons/fa";
-import { FaRegComment } from "react-icons/fa";
+import { IoEllipsisHorizontal } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoChatbubbleOutline } from "react-icons/io5";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { FiBookmark } from "react-icons/fi";
 import { BiSmile } from "react-icons/bi";
 import story from "./img/story.jpg";
 import logo from "../logo.svg";
-import "../style/Home.scss";
-// import { IoIosArrowDropleftCircle } from "react-icons/io";
-// import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import Img from "./Img";
 
 export default function Home() {
   return (
@@ -183,13 +183,11 @@ export default function Home() {
                     <span>xltmvkdls</span>
                   </div>
                   <div className="right">
-                    <FaEllipsisH />
+                    <IoEllipsisHorizontal />
                   </div>
                 </div>
-                <div className="content">
-                  <div className="img-content">
-                    <img src/>
-                  </div>
+                <div className="img-content">
+                  <Img />
                 </div>
                 <div className="info">
                   <div className="details">
@@ -197,18 +195,18 @@ export default function Home() {
                       <div className="l-icon">
                         <ul>
                           <li>
-                            <FaRegHeart />
+                            <IoMdHeartEmpty className="icon1"/>
                           </li>
                           <li>
-                            <FaRegComment />
+                            <IoChatbubbleOutline className="icon2"/>
                           </li>
                           <li>
-                            <IoPaperPlaneOutline />
+                            <IoPaperPlaneOutline className="icon3"/>
                           </li>
                         </ul>
                       </div>
                       <div className="r-icon">
-                        <FiBookmark />
+                        <FiBookmark className="icon4"/>
                       </div>
                     </div>
                     <div className="det2">
@@ -255,7 +253,7 @@ export default function Home() {
                           </span>
                         </div>
                         <span className="h-icon">
-                          <FaRegHeart />
+                          <IoMdHeartEmpty />
                         </span>
                       </div>
 
@@ -271,7 +269,7 @@ export default function Home() {
                           </span>
                         </div>
                         <span className="h-icon">
-                          <FaRegHeart />
+                          <IoMdHeartEmpty />
                         </span>
                       </div>
                     </div>
