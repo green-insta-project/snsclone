@@ -24,11 +24,6 @@ textarea:active{
 }
 
 
-
-
-
-
-
 // 탑 소희님 
 
 .top{
@@ -37,40 +32,40 @@ textarea:active{
 .header-wrap{
   position: fixed;
   border-bottom:1px solid #ddd;
+  background-color:#fff;
   width: 100%;
   z-index: 10;
 }
 header{
   width:100%; height:53px;
-  background-color:#fff;
   margin: 0 auto;
   max-width: 935px;
   display: flex;
 
   .logo{
-    position: fixed;
-    top:1.7%; left:25.5%;
+    padding-top: 1.7%;
     width:103px; height:29px;
     cursor: pointer;
   }
   .search{
     position: fixed;
     width:210px;
-    top:1.7%; left:44.5%;
+    top:1.5%; left:44.5%;
     text-align: center;
+    font-size:0.9rem;
     color:gray;
+    background-color: #fafafa;
     border-radius:3px;
     border: 1px solid #ddd;
-    padding:5px;
+    padding: 4.5px;
   }
   .searchicon{
-    position: fixed;
-    top:1.7%; left:44.5%;
+
   }
   .icon{
     position: fixed;
     top:1.7%; left:60.6%;
-    
+
     .nav-icon{
       margin-left:22px;
       cursor: pointer;
@@ -82,8 +77,6 @@ header{
     }
   }
 }
-
-
 
 
 
