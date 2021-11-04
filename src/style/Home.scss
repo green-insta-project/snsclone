@@ -23,12 +23,6 @@ textarea:active{
   outline: none;
 }
 
-
-
-
-
-
-
 // 탑 소희님 
 
 .top{
@@ -37,35 +31,35 @@ textarea:active{
 .header-wrap{
   position: fixed;
   border-bottom:1px solid #ddd;
+  background-color:#fff;
   width: 100%;
   z-index: 10;
 }
 header{
   width:100%; height:53px;
-  background-color:#fff;
   margin: 0 auto;
   max-width: 935px;
   display: flex;
 
   .logo{
-    position: fixed;
-    top:1.7%; left:25.5%;
+    padding-top: 1.7%;
     width:103px; height:29px;
     cursor: pointer;
   }
   .search{
     position: fixed;
     width:210px;
-    top:1.7%; left:44.5%;
+    top:1.5%; left:44.5%;
     text-align: center;
+    font-size:0.9rem;
     color:gray;
+    background-color: #fafafa;
     border-radius:3px;
     border: 1px solid #ddd;
-    padding:5px;
+    padding: 4.5px;
   }
   .searchicon{
-    position: fixed;
-    top:1.7%; left:44.5%;
+    
   }
   .icon{
     position: fixed;
@@ -97,6 +91,11 @@ header{
   display: flex;
   overflow: hidden;
   padding-top:30+54px;
+  padding-top: 84px;
+  display: flex;
+  overflow: hidden;
+  // border:  1px solid black;
+  // border:  1px solid black;
   
   .main-left{
     padding-right: 28px;
@@ -132,10 +131,10 @@ header{
     overflow: hidden;
     ul{
       padding-left:10px;
+      padding-left: 10px;
       list-style: none;
       display: flex;
       margin: 0;
-      padding: 0;
       li{
         flex-shrink: 0;
         width: 76px; height: 82px;
@@ -147,6 +146,7 @@ header{
           transform: translate(-50%, -57%);
           
           width: 56px; height: 57px;
+          width: 56px; height: 56px;
           border-radius: 100%;
           margin: 0 auto;
           
@@ -163,6 +163,9 @@ header{
             text-align: center;
             margin: 0;
           }
+        }
+        &:nth-of-type(1){
+          
         }
       }
     }
