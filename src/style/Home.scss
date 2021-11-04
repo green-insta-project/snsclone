@@ -1,15 +1,11 @@
-
-// 지연님 숙제
-$assortColor: #8e8e8e;
-$fontSize: 14px;
-$Point: pointer;
-
-
 // Reset css
 button,
 input,
 textarea{
   font-size: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   // background: transparent;
   // border: 0;
 }
@@ -83,6 +79,9 @@ header{
   max-width: 935px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 84px;
+  display: flex;
+  overflow: hidden;
   display: flex;
   overflow: hidden;
   padding-top: 84px;
@@ -98,6 +97,7 @@ header{
     //FIX 위치 잡기 
   }
 
+
 // 스토리 윤서님
 .story{
   width: 612px; height: 84px;
@@ -106,6 +106,7 @@ header{
   border-radius: 3px;
   padding: 16px 0;
   margin-bottom: 24px;
+  margin-top: 50px;
   position: relative;
   .story-contents{
     width: 100%; height: 100%;
@@ -114,6 +115,7 @@ header{
       width: 100%;
       display: flex;
       margin: 0;
+      padding: 0;
       padding-left: 10px;
       li{
         list-style: none;
@@ -186,7 +188,7 @@ header{
   box-sizing: border-box;
   width: 612px;
   background: #fafafa;
-  font-size: $fontSize;
+  font-size: 14px;
   section{
     width: 100%;
     margin: 0 auto;
@@ -205,15 +207,23 @@ header{
           justify-content: flex-start;
           align-items: center;
   
-          cursor: $Point;
+          cursor: pointer;
           figure{
+            position: relative;
             margin: 0;
-            width: 32px;
-            height: 32px;
-            background: #000;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
+            div{
+              width: 32px; height: 32px;
+              position: absolute;
+              top: 10%;
+              left: 12%;
+
+              img{width: 100%; border-radius: 50%;}
+            }
           }
-          span{ margin-left: 14px; }
+          span{ margin-left: 14px; font-weight: 600;}
         }
         .right{
           flex-basis: 10%;
@@ -261,17 +271,15 @@ header{
           // padding: 8px;
           width: 40px; height: 40px;
           font-size: 28px;
-          cursor: $Point;
+          cursor: pointer;
         }
       }
       // r-icon
       .r-icon{
         font-size: 28px;
         // padding: 8px;
-        cursor: $Point;
+        cursor: pointer;
       }
-      // icons
-      .icon1, .icon2, .icon3, .icon4{stroke-width: 1}
     }
     // det2
     .det2{
@@ -282,19 +290,20 @@ header{
       margin-bottom: 8px;
       p{margin: 0;}
       .another-user{
-        margin-right: 4px;
-        // padding: 8px 10px;
+        margin: 2px;
         span{
           display: block;
-          background: #000;
           width: 20px; height: 20px;
           border-radius: 50%; 
-          cursor: $Point;
+          cursor: pointer;
+          img{width: 100%;}
         }
       }
       .text{
         a{
-          cursor: $Point;
+          padding-left: 5px;
+          cursor: pointer;
+          font-weight: 600;
           &:hover{
             text-decoration: underline;
           }
@@ -307,18 +316,20 @@ header{
       display: flex;
       flex-direction: column;
       margin-bottom: 4px;
+      .l-con{font-weight: 600;}
       .btn{
         background: transparent;
         border: 0;
-        color: $assortColor
+        color:#8e8e8e;
       }
     }
     // det4
     .det4{
       margin-bottom: 4px;
+      margin-top: 2px;
       .comment{
-        color: $assortColor;
-        cursor: $Point;
+        color:#8e8e8e;
+        cursor: pointer;
       }
     }
     // det5
@@ -330,12 +341,12 @@ header{
       .comment-1{
         .nick-name{
           font-weight: 600;
-          cursor: $Point;
+          cursor: pointer;
         }
         .record{
           a{
             color: #00376b;
-            cursor: $Point;
+            cursor: pointer;
             text-decoration: none;
             &:hover{
               text-decoration: underline;
@@ -343,12 +354,15 @@ header{
           }
         }
       }
+      .small-heart{
+        width: 12px; height: 12px;
+      }
     }
     //det6
     .det6{
       padding: 0 16px;
       margin-bottom: 16px;
-      color: $assortColor;
+      color: #8e8e8e;
       a{
         font-size: 10px;
         letter-spacing: 0.2px;
@@ -356,35 +370,34 @@ header{
     }
     //det7
     .det7{
-      padding: 10px 26px;
+      padding: 6px 16px;
       border-top: 1px solid #efefef;
       background: #fff;
       form{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-
+        flex-grow: 1;
         flex-direction: row;
-        .box1{
-          display: flex;
-          justify-content: normal;
-          align-items: center;
-  
-          .smile{font-size: 24px;}
-          textarea{
-            color: $assortColor;
-            border: 0;
-            resize: none;
-            height: auto;
-            padding: 0;
-            padding-left: 20px;
-          }
+        .smile{
+          height: 24px;
+          padding: 8px 16px 8px 0;
         }
+        textarea{
+          display: flex;
+          flex-grow: 1;
+          color: rgba(var(--i1d,38,38,38),1);
+          border: 0;
+          resize: none;
+          height: auto;
+          padding: 0;
+        }
+
         button{
           color: #0095f6;
           opacity: .3;
           border: 0;
           background: transparent;
+          padding: 0;
         }
       }
     }
