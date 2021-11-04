@@ -1,16 +1,13 @@
-// *{
-//   margin: 0;
-//   padding: 0;
-  
-// }
 
   
   .every{
-    padding-top: 100px ;
+    padding-top: 97px;
     justify-content: center;
     background-color: #fafafa;
     display: flex;
     width: 100%;
+    overflow-x: hidden;
+    
 
       // Login페이지 좌측에 있는 반응형 부분(핸드폰 부분)
       .mobile{
@@ -21,14 +18,13 @@
         -ms-flex-preferred-size: 454px;
         flex-basis: 454px;
         height: 618px;
-        margin-left: -35px;
+        margin-left: -45px;
         margin-right: -15px;
       
       }
       .iphone{
         position: absolute;
         width: 170px;
-        // z-index: 3;
         padding-right: 20px;
       }
       
@@ -37,45 +33,47 @@
       .login{
         text-align: center;
         background-color: rgba(var(255,255,255),1);
-        padding-top: 1.5%;
+        padding-top: 2%;
         
   
 
         .loginA{
-          top: 18%;
           padding-top: 20px;
           padding-bottom: 10px;
           border: 1px solid #dbdbdb;
+          border-radius: 3px;
           background: white;
           
-          img{    
+          .instaicon{    
             width: 175px;
-            padding-top: 13px;
-            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 20px;
           }
-          // img{    
-          //   margin-top: 10px;
-          // }
           p{
+            margin: 8px 0;
            input{
-            padding: 7px 35px;
+            width: 70%;
+            padding: 11px 8px;
+            font-size: 12px;
             border: 1px solid #dbdbdb;
+            border-radius: 4px;
             background: #fafafa;
             border-radius: 3px;
            }
           }
           .loginbutton{
-            // padding: 20px 50px;
             
               input{
-                padding: 5px 110px;
+                width: 75%;
+                padding: 6px 115px;
+                font-size: 14px;
                 color: white;
                 background: #b2dffc;
                 font-weight: bolder;
                 border: none;
                 margin: 8px 40px;
                 cursor: pointer;
-                border-radius: 3px;
+                border-radius: 4px;
               }
           }
           .line1{
@@ -105,26 +103,26 @@
             background-color: #dbdbdb;
             height: 1px;
             position: relative;
-            left: 210px;
-            bottom: 10px;
+            left: 220px;
+            bottom: 24px;
             width: 6rem;
           }
           
           .or{
             color: #8e8e8e;
+            font-weight: bolder;
             font-size: 13px;
-            // padding-bottom: 7px;
+            padding-bottom: 15px;
           }
           .facebook{
-            // padding-left: 20px;
             color: #385185;
             font-size: 14px;
-            font-weight: bolder;
+            font-weight: bold;
             cursor: pointer;
-            padding-bottom: 5px;
-            img{
-              position: relative;
-              width: 13px;
+            padding-bottom: 12px;
+
+            .facebookicon{
+              width: 14px;
               padding-right: 5px;
               
             }
@@ -141,12 +139,12 @@
         .loginB{
           background: white;
           border: 1px solid #dbdbdb;
+          border-radius: 3px;
           // margin: 0 0 10px;
           margin-top: 15px;
           padding: 20px 60px;
           font-size: 14px;
               a{
-                padding: 0 10px;
                 margin-top: 15px;
               }
               .point{
@@ -167,12 +165,12 @@
             padding: 5px 0;
           }
           .appstore{
-            width: 130px;
+            width: 137px;
             padding-right: 7px;
             cursor: pointer;
           }
           .googleplay{
-            width: 130px;
+            width: 137px;
             cursor: pointer;
           }
         }
@@ -186,6 +184,9 @@
   footer{
     padding-top:  85px;
     // padding-bottom: 32px;
+    overflow-x: hidden;
+    padding-top:  100px;
+    padding-bottom: 65px;
     position: relative;
     align-items: center;
     text-align: center;
@@ -194,6 +195,7 @@
     // background-color: darkgreen;
     
     p{
+      margin: 5px 0;
       a{
         text-align: center;
         align-items: center;
@@ -202,6 +204,7 @@
         margin-left: 15px;
         cursor: pointer;
       }
+      
     }
     
   }

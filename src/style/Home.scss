@@ -89,11 +89,13 @@ header{
   width: 60%;
   max-width: 935px;
   width: 100%;
-  height: 300vh;
   margin: 0 auto;
   padding-top: 84px;
   display: flex;
   overflow: hidden;
+  display: flex;
+  overflow: hidden;
+  padding-top:30+54px;
   
   .main-left{
     padding-right: 28px;
@@ -122,6 +124,7 @@ header{
     width: 100%; height: 100%;
     overflow: hidden;
     ul{
+      padding-left:10px;
       list-style: none;
       display: flex;
       margin: 0;
@@ -137,7 +140,7 @@ header{
           left: 50%; top: 50%;
           transform: translate(-50%, -57%);
           
-          width: 56px; height: 56px;
+          width: 56px; height: 57px;
           border-radius: 100%;
           margin: 0 auto;
           
@@ -420,12 +423,14 @@ header{
   padding: 18px 0 10px;
   display: flex;
   align-items: center;
+  
   .profile-img{
     width:56px; height:56px;
     margin-right: 12px;
     border-radius: 50%;
     background: rosybrown;
     position: relative;
+    
     img{
       width: 100%;
       position: absolute;

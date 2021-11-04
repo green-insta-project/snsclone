@@ -41,7 +41,7 @@ export default function Login() {
         
         <form className="loginA">
         {/* <img src="./img/instalogo.png" className="logo" /> */}
-                <img src={Insta}/>
+                <img className="instaicon" src={Insta}/>
                 <p>
                     <input placeholder="전화번호, 사용자 이름 또는 이메일"  type="text" />
                 </p>
@@ -57,8 +57,7 @@ export default function Login() {
                 </div>
                 <div className="line2" />
                 <p className="facebook">
-                  {/* <img src={Facebook}/> */}
-                  Facebook으로 로그인
+                  <img className="facebookicon" src={Facebook}/>Facebook으로 로그인
                 </p>
                 <p className="forgot">
                   비밀번호를 잊으셨나요?
