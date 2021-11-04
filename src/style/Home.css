@@ -2,6 +2,7 @@ button,
 input,
 textarea {
   font-size: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 button:focus,
@@ -22,6 +23,7 @@ textarea:active {
 .header-wrap {
   position: fixed;
   border-bottom: 1px solid #ddd;
+  background-color: #fff;
   width: 100%;
   z-index: 10;
 }
@@ -29,7 +31,6 @@ textarea:active {
 header {
   width: 100%;
   height: 53px;
-  background-color: #fff;
   margin: 0 auto;
   max-width: 935px;
   display: -webkit-box;
@@ -38,9 +39,7 @@ header {
 }
 
 header .logo {
-  position: fixed;
-  top: 1.7%;
-  left: 25.5%;
+  padding-top: 1.7%;
   width: 103px;
   height: 29px;
   cursor: pointer;
@@ -49,19 +48,15 @@ header .logo {
 header .search {
   position: fixed;
   width: 210px;
-  top: 1.7%;
+  top: 1.5%;
   left: 44.5%;
   text-align: center;
+  font-size: 0.9rem;
   color: gray;
+  background-color: #fafafa;
   border-radius: 3px;
   border: 1px solid #ddd;
-  padding: 5px;
-}
-
-header .searchicon {
-  position: fixed;
-  top: 1.7%;
-  left: 44.5%;
+  padding: 4.5px;
 }
 
 header .icon {
@@ -87,8 +82,11 @@ header .icon .profile {
   max-width: 935px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
   display: flex;
   overflow: hidden;
   padding-top: 84px;
@@ -106,21 +104,15 @@ header .icon .profile {
   top: 88px;
 }
 
-.main .main {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 4.5%;
-  max-width: 935px;
-}
-
 .main .story {
   width: 612px;
   height: 84px;
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   border-radius: 3px;
-  padding: 14px 0;
+  padding: 16px 0;
   margin-bottom: 24px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -130,54 +122,66 @@ header .icon .profile {
   overflow: hidden;
 }
 
-.main .story .story-contents ul {
-  padding-left: 10px;
-  list-style: none;
+.main .story .story-contents .story-item {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 10px;
 }
 
-.main .story .story-contents ul li {
+.main .story .story-contents .story-item li {
+  list-style: none;
+}
+
+.main .story .story-contents .story-item li div {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 76px;
-  height: 82px;
+  width: 72px;
+  height: 84px;
   padding: 0 4px;
   position: relative;
+  cursor: pointer;
 }
 
-.main .story .story-contents ul li div {
+.main .story .story-contents .story-item li div .story-svg {
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -57%);
-          transform: translate(-50%, -57%);
-  width: 56px;
-  height: 57px;
+  top: 22%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  width: 76px;
+  height: 76px;
   border-radius: 100%;
-  margin: 0 auto;
 }
 
-.main .story .story-contents ul li div > img {
+.main .story .story-contents .story-item li div .story-img {
+  position: absolute;
+  left: 50%;
+  top: 26%;
+  -webkit-transform: translate(-50%, -28%);
+          transform: translate(-50%, -28%);
   background-color: #eee;
-  width: 100%;
+  width: 54px;
+  height: 54px;
   border-radius: 100%;
   overflow: hidden;
 }
 
-.main .story .story-contents ul li div p {
+.main .story .story-contents .story-item li div p {
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
   color: #262626;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  margin: 0;
-}
-
-.main .story .story-svg {
-  width: 100%;
+  margin: 0 auto;
 }
 
 .main .story .story-arrow .story-leftarrow {
@@ -250,15 +254,29 @@ header .icon .profile {
 }
 
 .main .post-wrap section article .header .left figure {
+  position: relative;
   margin: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.main .post-wrap section article .header .left figure div {
   width: 32px;
   height: 32px;
-  background: #000;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+
+.main .post-wrap section article .header .left figure div img {
+  width: 100%;
   border-radius: 50%;
 }
 
 .main .post-wrap section article .header .left span {
   margin-left: 14px;
+  font-weight: 600;
 }
 
 .main .post-wrap section article .header .right {
@@ -331,10 +349,6 @@ header .icon .profile {
   cursor: pointer;
 }
 
-.main .info .details .det1 .icon1, .main .info .details .det1 .icon2, .main .info .details .det1 .icon3, .main .info .details .det1 .icon4 {
-  stroke-width: 1;
-}
-
 .main .info .details .det2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,20 +368,25 @@ header .icon .profile {
 }
 
 .main .info .details .det2 .another-user {
-  margin-right: 4px;
+  margin: 2px;
 }
 
 .main .info .details .det2 .another-user span {
   display: block;
-  background: #000;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
 
+.main .info .details .det2 .another-user span img {
+  width: 100%;
+}
+
 .main .info .details .det2 .text a {
+  padding-left: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .main .info .details .det2 .text a:hover {
@@ -386,6 +405,10 @@ header .icon .profile {
   margin-bottom: 4px;
 }
 
+.main .info .details .bulletin .l-con {
+  font-weight: 600;
+}
+
 .main .info .details .bulletin .btn {
   background: transparent;
   border: 0;
@@ -394,6 +417,7 @@ header .icon .profile {
 
 .main .info .details .det4 {
   margin-bottom: 4px;
+  margin-top: 2px;
 }
 
 .main .info .details .det4 .comment {
@@ -429,6 +453,11 @@ header .icon .profile {
   text-decoration: underline;
 }
 
+.main .info .details .det5 .small-heart {
+  width: 12px;
+  height: 12px;
+}
+
 .main .info .details .det6 {
   padding: 0 16px;
   margin-bottom: 16px;
@@ -441,7 +470,7 @@ header .icon .profile {
 }
 
 .main .info .details .det7 {
-  padding: 10px 26px;
+  padding: 6px 16px;
   border-top: 1px solid #efefef;
   background: #fff;
 }
@@ -450,41 +479,35 @@ header .icon .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.main .info .details .det7 form .box1 {
+.main .info .details .det7 form .smile {
+  height: 24px;
+  padding: 8px 16px 8px 0;
+}
+
+.main .info .details .det7 form textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .info .details .det7 form .box1 .smile {
-  font-size: 24px;
-}
-
-.main .info .details .det7 form .box1 textarea {
-  color: #8e8e8e;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
   border: 0;
   resize: none;
   height: auto;
   padding: 0;
-  padding-left: 20px;
 }
 
 .main .info .details .det7 form button {
@@ -492,6 +515,7 @@ header .icon .profile {
   opacity: .3;
   border: 0;
   background: transparent;
+  padding: 0;
 }
 
 .main .profile-card {
