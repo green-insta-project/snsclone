@@ -63,9 +63,13 @@ header{
     border: 1px solid #ddd;
     padding:5px;
   }
+
+
   .searchicon{
-    position: fixed;
-    top:1.7%; left:44.5%;
+    position: absolute;
+    top:0%; left:0%;
+    // &::-ms-clear { display:none; }
+
   }
   .icon{
     position: fixed;
@@ -108,6 +112,7 @@ header{
     position: fixed;
     left: 1126px; top: 88px;
     //FIX 위치 잡기 
+    
   }
 // 윤서님
 .main{
