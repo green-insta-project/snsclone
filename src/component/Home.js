@@ -19,15 +19,16 @@ import user from "./img/user.jpg"
 
 
 export default function Home() {
-
-
   
   return (
     <>
+    
+
       
     <div className="top">
       <div className="header-wrap">
         <header>
+          <div>
           <img src="./img/instalogo.png" className="logo" />
 
           <input placeholder="검색" type="search"  className="search"/>
@@ -37,6 +38,9 @@ export default function Home() {
                 <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"></path></svg>
             </div>
 
+         </div>
+          <div>
+          <input placeholder="검색" type="search" className="search" />
           
           <input placeholder="검색" type="search" className="search" />
           <input placeholder="검색" type="search" className="search"/>
@@ -44,6 +48,7 @@ export default function Home() {
           <div clssName="searchicon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="gray" width="10" height="10" viewBox="0 0 24 24">
               <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"></path></svg>
+          </div>
           </div>
           
           <div className="icon">
@@ -71,69 +76,26 @@ export default function Home() {
       </div>
     </div>
     {/* 윤서님 */}
-
       <div className="main">
         <div className="main-left">
           <div className="story">
             <div className="story-contents">
-              <ul>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-                <li>
-                    <img src={storysvg} className="story-svg"/>
-                  <div>
-                    <img src={storyimg} />
-                    <p>yoons_93</p>
-                  </div>
-                </li>
-              </ul>
+                <ul className="story-item">
+                  <li>
+                    <div>
+                      <img src={storysvg} className="story-svg"/>
+                      <img src={storyimg} className="story-img"/>
+                      <p>yoons_93</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src={storysvg} className="story-svg"/>
+                      <img src={storyimg} className="story-img"/>
+                      <p>yoons_93</p>
+                    </div>
+                  </li>
+                </ul>
             </div>
             <div className="story-arrow">
               <button className="story-leftarrow"> <IoIosArrowDropleftCircle size="1.8em" color="#fff"/> </button>
