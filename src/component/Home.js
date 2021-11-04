@@ -1,11 +1,6 @@
 import React from "react";
 import "../style/Home.scss";
 import { IoEllipsisHorizontal } from "react-icons/io5";
-import { IoMdHeartEmpty } from "react-icons/io";
-import { IoChatbubbleOutline } from "react-icons/io5";
-import { IoPaperPlaneOutline } from "react-icons/io5";
-import { FiBookmark } from "react-icons/fi";
-import { BiSmile } from "react-icons/bi";
 import storyimg from "./img/story.jpg";
 import logo from "../logo.svg";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
@@ -13,6 +8,15 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Img from "./Img";
 import "../style/Home.scss";
 import storysvg from "./img/story.svg";
+import Heart from "./Heart";
+import Bubble from "./Bubble";
+import Plane from "./Plane";
+import Storage from "./Storage";
+import Smile from "./Smile"
+import user from "./img/user.jpg"
+
+
+
 
 export default function Home() {
   
@@ -26,6 +30,14 @@ export default function Home() {
         <header>
           <div>
           <img src="./img/instalogo.png" className="logo" />
+
+          <input placeholder="검색" type="search"  className="search"/>
+            
+            <div clssName="searchicon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="gray" width="10" height="10" viewBox="0 0 24 24">
+                <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"></path></svg>
+            </div>
+
          </div>
           <div>
           <input placeholder="검색" type="search" className="search" />
@@ -97,7 +109,10 @@ export default function Home() {
                 <div className="header">
                   <div className="left">
                     <figure>
-                      <img src />
+                      <img src={storysvg} />
+                      <div>
+                        <img src={storyimg}/>
+                      </div>
                     </figure>
                     <span>xltmvkdls</span>
                   </div>
@@ -114,26 +129,29 @@ export default function Home() {
                       <div className="l-icon">
                         <ul>
                           <li>
-                            <IoMdHeartEmpty className="icon1"/>
+                            <Heart />
                           </li>
                           <li>
-                            <IoChatbubbleOutline className="icon2"/>
+                            <Bubble />
                           </li>
                           <li>
-                            <IoPaperPlaneOutline className="icon3"/>
+                            <Plane />
                           </li>
                         </ul>
                       </div>
                       <div className="r-icon">
-                        <FiBookmark className="icon4"/>
+                        <Storage />
                       </div>
                     </div>
                     <div className="det2">
                       <div className="another-user">
-                        <span></span>
+                        <span>
+                          <img src={user}/>
+                        </span>
                       </div>
                       <p className="text">
-                        <a>naeun____8360님</a>
+                        <a>naeun____8360</a>
+                        님
                         &nbsp;
                         <strong>여러 명</strong>이 좋아합니다.
                       </p>
@@ -172,7 +190,7 @@ export default function Home() {
                           </span>
                         </div>
                         <span className="h-icon">
-                          <IoMdHeartEmpty />
+                          <Heart className="small-heart"/>
                         </span>
                       </div>
 
@@ -188,7 +206,7 @@ export default function Home() {
                           </span>
                         </div>
                         <span className="h-icon">
-                          <IoMdHeartEmpty />
+                          <Heart className="small-heart" />
                         </span>
                       </div>
                     </div>
@@ -200,16 +218,15 @@ export default function Home() {
                     <div className="det7">
                       <div className="leave-comment">
                         <form>
-                          <div className="box1">
-                            <div className="smile">
-                              <BiSmile />
+                          <div className="smile">
+                              <Smile />
                             </div>
                             <textarea
                               rows="1"
                               cols="45"
-                              placeholder="댓글달기..."
+                              placeholder="댓글 달기..."
                             ></textarea>
-                          </div>
+
                           <button type="button">게시</button>
                         </form>
                       </div>
