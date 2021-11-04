@@ -55,6 +55,9 @@
             width: 70%;
             padding: 11px 8px;
             font-size: 12px;
+             width:70%;
+            padding: 7px 10px;
+            font-size:0.8rem;
             border: 1px solid #dbdbdb;
             border-radius: 4px;
             background: #fafafa;
@@ -148,7 +151,6 @@
                 margin-top: 15px;
               }
               .point{
-               
                 color: #0095f6;
                 font-weight: 700;
                 cursor: pointer;
@@ -210,6 +212,6 @@
 
   @media (max-width:876px){
     .mobile{
-     display: none;
+    display: none;
     }
   }
