@@ -33,6 +33,7 @@ export default function Home() {
           <img src="./img/instalogo.png" className="logo" />
           
           <input placeholder="검색" type="search" className="search" />
+          <input placeholder="검색" type="search" className="search"/>
           
           <div clssName="searchicon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="gray" width="10" height="10" viewBox="0 0 24 24">
