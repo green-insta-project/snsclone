@@ -62,7 +62,7 @@ export default function Home() {
           <div className="story">
             <div className="story-contents">
               <Story className="story-slider">
-                <ul className="story-item">
+                {/* <ul className="story-item">
                   <li>
                     <div>
                       <img src={storysvg} className="story-svg"/>
@@ -77,7 +77,7 @@ export default function Home() {
                       <p>yoons_93</p>
                     </div>
                   </li>
-                </ul>
+                </ul> */}
                 </Story>
             </div>
           </div>

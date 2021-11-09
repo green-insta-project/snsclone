@@ -55,6 +55,14 @@ header{
     border: 1px solid #ddd;
     padding: 4.5px;
   }
+<<<<<<< HEAD
+=======
+
+
+  .searchicon{
+  }
+
+>>>>>>> 9d2cb96e1e3482fc9545bf81fe02ec873ab54cc0
   .icon{
     position: fixed;
     top:1.7%; left:60.6%;
@@ -79,9 +87,15 @@ header{
   max-width: 935px;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
   padding-top: 84px;
   display: flex;
   overflow: hidden;
+=======
+  display: flex;
+  overflow: hidden;
+  padding-top: 84px;
+>>>>>>> 9d2cb96e1e3482fc9545bf81fe02ec873ab54cc0
   .main-left{
     padding-right: 28px;
   }
@@ -89,8 +103,8 @@ header{
     max-width: 293px;
     width: 100%;
     position: fixed;
-    left: 1126px; top: 88px;
-    //FIX 위치 잡기 
+    margin-left: 640px;
+    
   }
 
 // 스토리 윤서님
@@ -523,7 +537,7 @@ header{
       color: rgb(199,199,199);
       padding-bottom: 5px;
       .lang{
-        display: none;
+        display: none; 
       }
     }
     a{
@@ -543,4 +557,19 @@ header{
     line-height: 13px;
   }
 }
+}
+
+
+
+
+
+
+
+
+
+// 반응형
+
+@media (max-width: 999px) {
+  .main-right { display: none; }
+  .main-left { margin: 0 auto; }
 }
