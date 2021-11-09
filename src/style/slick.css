@@ -1,3 +1,9 @@
+/* story Slider */
+.story-slider{
+    width: 100%;
+    position: relative;
+}
+
 /* Slider */
 .slick-slider
 {

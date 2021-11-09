@@ -55,11 +55,14 @@ header{
     border: 1px solid #ddd;
     padding: 4.5px;
   }
+<<<<<<< HEAD
+=======
 
 
   .searchicon{
   }
 
+>>>>>>> 9d2cb96e1e3482fc9545bf81fe02ec873ab54cc0
   .icon{
     position: fixed;
     top:1.7%; left:60.6%;
@@ -84,9 +87,15 @@ header{
   max-width: 935px;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
+  padding-top: 84px;
+  display: flex;
+  overflow: hidden;
+=======
   display: flex;
   overflow: hidden;
   padding-top: 84px;
+>>>>>>> 9d2cb96e1e3482fc9545bf81fe02ec873ab54cc0
   .main-left{
     padding-right: 28px;
   }
@@ -97,7 +106,6 @@ header{
     margin-left: 640px;
     
   }
-
 
 // 스토리 윤서님
 .story{
@@ -403,12 +411,6 @@ header{
     }
   }
 }
-
-
-
-
-
-
 
 
 //계정프로필&추천 지화꺼
