@@ -20,12 +20,21 @@
   height: 618px;
   margin-left: -45px;
   margin-right: -15px;
+  position: relative;
 }
 
-.every .iphone {
+.every .mobile img {
+  padding-left: 150.5px;
+  padding-top: 99px;
   position: absolute;
-  width: 170px;
-  padding-right: 20px;
+  inset: 0;
+  width: 241px;
+  opacity: 1;
+}
+
+.every .mobile:active {
+  opacity: 2;
+  visibility: visible;
 }
 
 .every .login {
@@ -56,6 +65,9 @@
   width: 70%;
   padding: 11px 8px;
   font-size: 12px;
+  width: 70%;
+  padding: 7px 10px;
+  font-size: 0.8rem;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   background: #fafafa;
@@ -166,6 +178,7 @@
 }
 
 footer {
+  padding-top: 85px;
   overflow-x: hidden;
   padding-top: 100px;
   padding-bottom: 65px;
@@ -183,6 +196,7 @@ footer p {
 }
 
 footer p a {
+  text-decoration: none;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
