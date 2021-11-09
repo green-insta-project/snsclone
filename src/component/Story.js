@@ -21,74 +21,75 @@ export default class SimpleSlider extends Component {
             <Slider className="story-slider" {...settings}>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                      <img src={storysvg} className="story-svg"/>
-                      <img src={storyimg} className="story-img"/>
+                      <img src={storysvg} className="story-svg" alt="storyimg"/>
+                      <img src={storyimg} className="story-img" alt="storyimg"/>
                       <p>yoons_93</p>
                     </div>
                 </li>
+                
                   
             </Slider>
         </div>
