@@ -20,13 +20,32 @@
         height: 618px;
         margin-left: -45px;
         margin-right: -15px;
+        position: relative;
+        img{          
+          padding-left: 150.5px;
+          padding-top: 99px; 
+          position: absolute;
+          inset: 0;
+          width: 241px;
+          opacity: 1;
+          // visibility: hidden;
+          // transition: all 5s ease-in;
+        }
+        &:active{
+          opacity: 2;
+          visibility: visible;
+        }
       
       }
-      .iphone{
-        position: absolute;
-        width: 170px;
-        padding-right: 20px;
-      }
+      // .iphone{
+      //   img{            
+      //     opacity: 99999;
+      //     transition: all 0.5s ease-in-out;
+      //   }
+      //   &:active{
+      //     opacity: 1999999999999;
+      //   }
+      // }
       
       // Login페이지 우측에 있는 로그인 부분
 
@@ -196,9 +215,12 @@
     background: #fafafa;
     // background-color: darkgreen;
     
+    
     p{
       margin: 5px 0;
       a{
+        
+      text-decoration: none;
         text-align: center;
         align-items: center;
         color: #8e8e8e;

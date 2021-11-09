@@ -57,9 +57,8 @@ export default function Home() {
           </div>
         </header>
       </div>
-    </div>
-    {/* 윤서님 */}
-    <div className="main">
+    </div>    {/* 윤서님 */}
+      <div className="main">
         <div className="main-left">
           <div className="story">
             <div className="story-contents">

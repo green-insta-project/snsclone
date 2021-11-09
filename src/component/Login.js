@@ -9,12 +9,7 @@ import Img4 from './img/177140221987.jpg';
 import Img5 from './img/9144d6673849.jpg';
 import Img6 from './img/5e04169b9308.jpg';
 import Insta from './img/instagram1.png';
-import Facebook from './img/facebook.png'
-
-
-
-
-
+import Facebook from './img/facebook.png';
 
 
 export default function Login() {
@@ -24,14 +19,21 @@ export default function Login() {
     {/* Login페이지 좌측에 있는 반응형 부분 */}
 
       <div className="mobile">
+            <img src={Img2}/>
+            <img src={Img3}/>
+            <img src={Img4}/>
+            <img src={Img5}/>
+            <img src={Img6}/>
       </div>
-      <div className="iphone">
-        {/* <img src={Img2}/>
-        <img src={Img3}/>
-        <img src={Img4}/>
-        <img src={Img5}/>
-        <img src={Img6}/> */}
-      </div>
+
+      
+      {/* <div className="iphone">
+            <img src={Img2}/>
+            <img src={Img3}/>
+            <img src={Img4}/>
+            <img src={Img5}/>
+            <img src={Img6}/>
+      </div> */}
 
 
 
@@ -87,28 +89,28 @@ export default function Login() {
     <footer>
      
       <p>
-        <a>Meta</a>
-        <a>소개</a>
-        <a>블로그</a>
-        <a>채용 정보</a>
-        <a>도움말</a>
-        <a>API</a>
-        <a>개인정보처리방침</a>
-        <a>약관</a>
-        <a>인기 계정</a>
-        <a>해시태그</a>
-        <a>위치</a>
-        <a>Instagram Lite</a>
+        <a href="#">Meta</a>
+        <a href="#">소개</a>
+        <a href="#">블로그</a>
+        <a href="#">채용 정보</a>
+        <a href="#">도움말</a>
+        <a href="#">API</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">약관</a>
+        <a href="#">인기 계정</a>
+        <a href="#">해시태그</a>
+        <a href="#">위치</a>
+        <a href="#">Instagram Lite</a>
       </p>
       
       <p>        
-        <a>뷰티</a>
-        <a>댄스</a>
-        <a>피트니스</a>
-        <a>식음료</a>
-        <a>집 및 정원</a>
-        <a>음악</a>
-        <a>시각 예술</a>
+        <a href="#">뷰티</a>
+        <a href="#">댄스</a>
+        <a href="#">피트니스</a>
+        <a href="#">식음료</a>
+        <a href="#">집 및 정원</a>
+        <a href="#">음악</a>
+        <a href="#">시각 예술</a>
       </p>
 
       <p>
