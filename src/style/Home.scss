@@ -89,14 +89,12 @@ header{
   padding-top: 84px;
   .main-left{
     padding-right: 28px;
-
   }
   .main-right{
     max-width: 293px;
     width: 100%;
     position: fixed;
-    left: 1126px; top: 88px;
-    //FIX 위치 잡기 
+    margin-left: 640px;
     
   }
 
@@ -537,7 +535,7 @@ header{
       color: rgb(199,199,199);
       padding-bottom: 5px;
       .lang{
-        display: none;
+        display: none; 
       }
     }
     a{
@@ -557,4 +555,19 @@ header{
     line-height: 13px;
   }
 }
+}
+
+
+
+
+
+
+
+
+
+// 반응형
+
+@media (max-width: 999px) {
+  .main-right { display: none; }
+  .main-left { margin: 0 auto; }
 }
