@@ -19,12 +19,8 @@ export default function Home() {
   
   return (
     <>
-<<<<<<< HEAD
-  <div className="top">
-=======
     
     <div className="top">
->>>>>>> 66a158e715dc48e51ac1625c628048e00a1f6912
       <div className="header-wrap">
         <header>
           <img src="./img/instalogo.png" className="logo" />
