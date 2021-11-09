@@ -3,8 +3,6 @@ import "../style/Home.scss";
 import { IoEllipsisHorizontal } from "react-icons/io5";
 import storyimg from "./img/story.jpg";
 import logo from "../logo.svg";
-import { IoIosArrowDropleftCircle } from "react-icons/io";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Img from "./Img";
 import "../style/Home.scss";
 import storysvg from "./img/story.svg";
@@ -14,8 +12,7 @@ import Plane from "./Plane";
 import Storage from "./Storage";
 import Smile from "./Smile"
 import user from "./img/user.jpg"
-
-
+import Story from "./Story";
 
 
 export default function Home() {
@@ -27,9 +24,9 @@ export default function Home() {
       <div className="header-wrap">
         <header>
           <img src="./img/instalogo.png" className="logo" />
-          
-          <input placeholder="검색" type="search" className="search"/>
-          
+
+          <input placeholder="검색" type="search"  className="search"/>
+            
           <div clssName="searchicon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="gray" width="10" height="10" viewBox="0 0 24 24">
               <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"></path></svg>
@@ -59,13 +56,12 @@ export default function Home() {
         </header>
       </div>
     </div>
-
-    
     {/* 윤서님 */}
       <div className="main">
         <div className="main-left">
           <div className="story">
             <div className="story-contents">
+              <Story className="story-slider">
                 <ul className="story-item">
                   <li>
                     <div>
@@ -82,10 +78,7 @@ export default function Home() {
                     </div>
                   </li>
                 </ul>
-            </div>
-            <div className="story-arrow">
-              <button className="story-leftarrow"> <IoIosArrowDropleftCircle size="1.8em" color="#fff"/> </button>
-              <button className="story-rightarrow"> <IoIosArrowDroprightCircle size="1.8em" color="#fff"/> </button>
+                </Story>
             </div>
           </div>
 

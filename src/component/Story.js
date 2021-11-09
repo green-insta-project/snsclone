@@ -14,11 +14,11 @@ export default class SimpleSlider extends Component {
             infinite: true,
             speed: 500,
             slidesToShow: 8,
-            slidesToScroll: 1,
+            slidesToScroll: 5,
         };
         return (
         <div className="story-item">
-            <Slider {...settings}>
+            <Slider className="story-slider" {...settings}>
                 <li>
                     <div>
                       <img src={storysvg} className="story-svg"/>
