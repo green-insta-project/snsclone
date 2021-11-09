@@ -20,6 +20,8 @@ import user from "./img/user.jpg"
 
 export default function Home() {
   
+
+  // 언어변경 = 
   return (
     <>
     
@@ -345,7 +347,7 @@ export default function Home() {
                 <a className="footer-li-text" href="/directory/hashtags/">해시태그</a>
               </li>
               <li>
-                <span className="btn-lang">언어
+                <span className="btn-lang" onClick="언어변경">언어
                   <select aria-label="표시 언어 변경" className="lang">
                     <option value="af">Afrikaans</option>
                     <option value="cs">Čeština</option>
